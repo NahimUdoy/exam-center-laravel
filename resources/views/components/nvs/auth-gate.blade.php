@@ -14,9 +14,9 @@
         <div class="relative z-10 w-full max-w-md overflow-hidden rounded-t-[1.75rem] bg-white shadow-premium-lg sm:rounded-[1.75rem]" @click.stop>
             <div class="bg-gradient-to-br from-[#0b1f44] via-[#123066] to-brand px-6 pb-6 pt-5 text-white">
                 <button type="button" @click="open = false" class="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full bg-white/10 text-sm">✕</button>
-                <p class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-sky-200">Save your progress</p>
-                <h2 class="font-display mt-2 text-2xl font-extrabold">Log in to continue</h2>
-                <p class="mt-1 text-sm text-white/70">You can read every question and test. An account is only needed when you start, answer, or submit.</p>
+                <p class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-sky-200">Account needed</p>
+                <h2 class="font-display mt-2 text-2xl font-extrabold">Log in to open questions</h2>
+                <p class="mt-1 text-sm text-white/70">Browse every task type for free. Log in to see the questions and submit your answers.</p>
             </div>
             <div class="grid grid-cols-2 gap-1 bg-mist p-1">
                 <button type="button" class="rounded-xl py-2 text-sm font-bold" :class="tab === 'login' ? 'bg-white text-ink shadow-sm' : 'text-muted'" @click="tab = 'login'">Log in</button>

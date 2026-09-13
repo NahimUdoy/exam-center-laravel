@@ -23,13 +23,13 @@
                     <p class="hand-note absolute -top-2 left-0 rotate-[-6deg] text-xl sm:text-2xl">{{ $site['heroNote'] ?? 'Your IELTS Journey Starts Here!' }}</p>
                 <h1 class="font-display mt-10 text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
                     Practice Today,<br>
-                    <span class="bg-gradient-to-r from-brand to-indigo-600 bg-clip-text text-transparent">Achieve Tomorrow</span>
+                    <span class="text-brand">Achieve Tomorrow</span>
                 </h1>
                 <p class="mt-5 max-w-md text-base leading-relaxed text-muted sm:text-lg">
                     Your all-in-one free practice hub for IELTS, PTE, MBA & BBA. Real exam patterns. Clear plans. Keep the spirit — never stop.
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a href="{{ route('dashboard') }}" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-deep px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/30">Start Your Free Practice →</a>
+                    <a href="{{ route('dashboard') }}" class="inline-flex items-center gap-2 rounded-2xl bg-brand px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/25">Start Your Free Practice →</a>
                     <a href="#how" class="text-sm font-bold text-brand">Watch How It Works</a>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <section class="bg-[#eef4ff] px-4 py-16 sm:px-6 lg:py-20">
+    <section class="bg-mist px-4 py-16 sm:px-6 lg:py-20">
         <div class="mx-auto max-w-7xl">
             <div class="grid items-start gap-8 lg:grid-cols-[0.9fr_1.15fr_0.95fr]">
                 <div class="relative pt-2">
@@ -90,7 +90,7 @@
 
     <x-nvs.courses-explorer :courses="$courses" :site="$site" />
 
-    <section id="free" class="bg-[#f8fbff] px-4 py-16 sm:px-6">
+    <section id="free" class="bg-paper px-4 py-16 sm:px-6">
         <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
             <div>
                 <div class="mb-5 grid h-16 w-16 place-items-center rounded-3xl bg-brand text-2xl text-white shadow-lg shadow-brand/30">🎁</div>
@@ -134,27 +134,21 @@
             </div>
             <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 @foreach($exams as $e)
-                    <div class="flex items-center gap-4 rounded-[1.25rem] border border-[rgba(15,40,80,0.08)] bg-mist/60 p-5">
+                    <div class="deck-card p-5">
                         <span class="grid h-12 w-12 place-items-center rounded-2xl text-sm font-bold text-white" style="background: {{ $e->accent }}">{{ $e->short_name }}</span>
-                        <div>
-                            <p class="font-display text-2xl font-extrabold text-ink">{{ number_format($e->question_count) }}+</p>
-                            <p class="text-sm text-muted">{{ $e->name }} practice sets</p>
-                        </div>
+                        <p class="font-display mt-3 text-2xl font-extrabold text-ink">{{ number_format($e->question_count) }}+</p>
+                        <p class="text-sm text-muted">{{ $e->name }} practice sets</p>
                     </div>
                 @endforeach
-                <div class="flex items-center gap-4 rounded-[1.25rem] border border-[rgba(15,40,80,0.08)] bg-mist/60 p-5">
-                    <span class="grid h-12 w-12 place-items-center rounded-2xl bg-amber text-white">🎯</span>
-                    <div>
-                        <p class="font-display text-2xl font-extrabold text-ink">{{ $totalMocks }}+</p>
-                        <p class="text-sm text-muted">Mock Tests</p>
-                    </div>
+                <div class="deck-card p-5">
+                    <span class="grid h-12 w-12 place-items-center rounded-2xl bg-amber text-ink">🎯</span>
+                    <p class="font-display mt-3 text-2xl font-extrabold text-ink">{{ $totalMocks }}+</p>
+                    <p class="text-sm text-muted">Mock Tests</p>
                 </div>
-                <div class="flex items-center gap-4 rounded-[1.25rem] border border-[rgba(15,40,80,0.08)] bg-mist/60 p-5">
-                    <span class="grid h-12 w-12 place-items-center rounded-2xl bg-sky-500 text-white">🏆</span>
-                    <div>
-                        <p class="font-display text-2xl font-extrabold text-ink">{{ $totalCertificates }}+</p>
-                        <p class="text-sm text-muted">E-Certificates</p>
-                    </div>
+                <div class="deck-card p-5">
+                    <span class="grid h-12 w-12 place-items-center rounded-2xl bg-teal text-white">🏆</span>
+                    <p class="font-display mt-3 text-2xl font-extrabold text-ink">{{ $totalCertificates }}+</p>
+                    <p class="text-sm text-muted">E-Certificates</p>
                 </div>
             </div>
             <div class="mt-6 grid gap-3 rounded-[1.25rem] border border-dashed border-brand/25 bg-brand-soft/40 p-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -165,16 +159,12 @@
         </div>
     </section>
 
-    <footer class="relative overflow-hidden bg-gradient-to-b from-[#0b1f44] to-[#06122a] text-white">
-        <svg class="absolute inset-x-0 bottom-0 w-full opacity-40" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden>
-            <path d="M0 180V90L180 40l140 55 160-70 170 80 150-45 200 60 200-50V180H0z" fill="#132a52"/>
-            <path d="M0 180V120l220 10 160-55 180 45 140-30 190 50 160-35 150 40V180H0z" fill="#0f2348"/>
-        </svg>
+    <footer class="relative overflow-hidden bg-ink text-white">
         <div class="relative mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:py-20">
-            <p class="font-display text-sm font-bold uppercase tracking-[0.2em] text-sky-300">NextVerseSkill</p>
+            <p class="font-display text-sm font-bold uppercase tracking-[0.2em] text-amber">NextVerseSkill</p>
             <h2 class="font-display mt-3 text-3xl font-extrabold sm:text-5xl">Your Dream. Our Support.</h2>
             <p class="mx-auto mt-4 max-w-lg text-white/65">Be with us. Practice today. Don't stop. Everything is free — your spirit deserves a plan.</p>
-            <a href="{{ route('dashboard') }}" class="mt-8 inline-flex rounded-full bg-white px-8 py-3.5 text-sm font-bold text-brand shadow-xl">Start Your Free Practice →</a>
+            <a href="{{ route('dashboard') }}" class="mt-8 inline-flex rounded-2xl bg-brand px-8 py-3.5 text-sm font-bold text-white shadow-xl">Start Your Free Practice →</a>
             <div class="mt-10">
                 @include('components.nvs.developer-credit', ['light' => true])
             </div>

@@ -28,7 +28,7 @@
      }">
     <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:py-8">
         <div class="mb-8 overflow-hidden rounded-[1.75rem] border border-[rgba(15,40,80,0.08)] bg-paper shadow-sm">
-            <div class="relative px-6 py-8 text-white sm:px-8" style="background: linear-gradient(125deg, {{ $exam->accent }} 0%, #0b1a2b 70%)">
+            <div class="relative px-6 py-8 text-white sm:px-8" style="background: linear-gradient(125deg, {{ $exam->accent }} 0%, #2a231e 78%)">
                 <div class="pointer-events-none absolute -right-10 top-0 h-40 w-40 rounded-full bg-white/10 blur-3xl"></div>
                 <div class="pointer-events-none absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #d4af37 1px, transparent 1px); background-size: 22px 22px"></div>
                 <div class="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

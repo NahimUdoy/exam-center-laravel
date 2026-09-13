@@ -49,7 +49,7 @@ class Site
                 'cta_label' => 'Start practicing',
                 'cta_url' => '/dashboard',
                 'items' => [
-                    ['title' => 'Practice & mocks', 'body' => 'Open any question or mock. Login is only needed when you start.'],
+                    ['title' => 'Practice & mocks', 'body' => 'Browse every task type for free. Log in to open questions and submit answers.'],
                     ['title' => 'Events & news', 'body' => 'Upcoming classes, exam dates, and academy updates will show here.'],
                     ['title' => '100% free for now', 'body' => 'Plans, certificates, and drills stay open while we grow with you.'],
                 ],

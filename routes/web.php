@@ -33,7 +33,9 @@ Route::get('/mock-tests', [MockTestController::class, 'index'])->name('mock-test
 Route::get('/mock-tests/{mock:slug}', [MockTestController::class, 'show'])->name('mock-tests.show');
 
 Route::get('/practice/{skill}/{task}', [PracticeController::class, 'task'])->name('practice.task');
-Route::get('/practice/{skill}/{task}/{question}', [PracticeController::class, 'question'])->name('practice.question');
+Route::get('/practice/{skill}/{task}/{question}', [PracticeController::class, 'question'])
+    ->middleware('student')
+    ->name('practice.question');
 Route::post('/practice/{skill}/{task}/{question}', [PracticeController::class, 'submit'])
     ->middleware('student')
     ->name('practice.submit');
