@@ -12,6 +12,7 @@ use App\Support\PracticeKind;
 use App\Support\PracticePayload;
 use App\Support\PteBank;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PracticeContentSeeder extends Seeder
 {
@@ -19,13 +20,15 @@ class PracticeContentSeeder extends Seeder
 
     public function run(): void
     {
-        $this->seedPracticeQuestions();
-        $this->backfillPracticePayloads();
-        $this->seedTypedShowcase();
-        $this->seedExtraMocks();
-        $this->seedMockBanks();
-        $this->seedExtraPte();
-        $this->refreshCounts();
+        DB::transaction(function () {
+            $this->seedPracticeQuestions();
+            $this->backfillPracticePayloads();
+            $this->seedTypedShowcase();
+            $this->seedExtraMocks();
+            $this->seedMockBanks();
+            $this->seedExtraPte();
+            $this->refreshCounts();
+        });
     }
 
     private function seedPracticeQuestions(): void
