@@ -1,0 +1,202 @@
+[
+  {
+    "exam_slug": "pte",
+    "external_id": "pte-q1",
+    "prompt": "In Read Aloud, what matters most for a strong score?",
+    "options": [
+      {
+        "label": "Speaking very fast to finish early",
+        "score": 0
+      },
+      {
+        "label": "Clear pronunciation with natural pacing",
+        "score": 2
+      },
+      {
+        "label": "Changing words to sound smarter",
+        "score": 0
+      }
+    ],
+    "sort_order": 0
+  },
+  {
+    "exam_slug": "pte",
+    "external_id": "pte-q2",
+    "prompt": "Write From Dictation mainly checks:",
+    "options": [
+      {
+        "label": "Essay structure",
+        "score": 0
+      },
+      {
+        "label": "Listening accuracy + spelling",
+        "score": 2
+      },
+      {
+        "label": "Speaking fluency only",
+        "score": 1
+      }
+    ],
+    "sort_order": 1
+  },
+  {
+    "exam_slug": "ielts",
+    "external_id": "ielts-q1",
+    "prompt": "In IELTS Reading, True/False/Not Given answers should be based on:",
+    "options": [
+      {
+        "label": "Your general knowledge",
+        "score": 0
+      },
+      {
+        "label": "Exact evidence in the passage",
+        "score": 2
+      },
+      {
+        "label": "Guessing from the title only",
+        "score": 0
+      }
+    ],
+    "sort_order": 0
+  },
+  {
+    "exam_slug": "ielts",
+    "external_id": "ielts-q2",
+    "prompt": "For Writing Task 2, a solid approach is:",
+    "options": [
+      {
+        "label": "Write as many words as possible with no plan",
+        "score": 0
+      },
+      {
+        "label": "Clear position + supporting ideas + conclusion",
+        "score": 2
+      },
+      {
+        "label": "Copy phrases from the question only",
+        "score": 0
+      }
+    ],
+    "sort_order": 1
+  },
+  {
+    "exam_slug": "bba",
+    "external_id": "bba-q1",
+    "prompt": "If 20% of 250 is:",
+    "options": [
+      {
+        "label": "40",
+        "score": 0
+      },
+      {
+        "label": "50",
+        "score": 2
+      },
+      {
+        "label": "60",
+        "score": 0
+      }
+    ],
+    "sort_order": 0
+  },
+  {
+    "exam_slug": "bba",
+    "external_id": "bba-q2",
+    "prompt": "Verbal RC questions are best solved by:",
+    "options": [
+      {
+        "label": "Reading every option first blindly",
+        "score": 1
+      },
+      {
+        "label": "Understanding the passage, then matching evidence",
+        "score": 2
+      },
+      {
+        "label": "Skipping the passage entirely",
+        "score": 0
+      }
+    ],
+    "sort_order": 1
+  },
+  {
+    "exam_slug": "mba",
+    "external_id": "mba-q1",
+    "prompt": "Critical Reasoning usually asks you to:",
+    "options": [
+      {
+        "label": "Memorize facts from a textbook",
+        "score": 0
+      },
+      {
+        "label": "Evaluate assumptions and argument strength",
+        "score": 2
+      },
+      {
+        "label": "Translate the passage into Bangla",
+        "score": 0
+      }
+    ],
+    "sort_order": 0
+  },
+  {
+    "exam_slug": "mba",
+    "external_id": "mba-q2",
+    "prompt": "A good case-analysis memo should include:",
+    "options": [
+      {
+        "label": "Only emotions and opinions",
+        "score": 0
+      },
+      {
+        "label": "Problem, options, recommendation, risks",
+        "score": 2
+      },
+      {
+        "label": "A long story with no decision",
+        "score": 0
+      }
+    ],
+    "sort_order": 1
+  },
+  {
+    "exam_slug": "english-basic",
+    "external_id": "eng-q1",
+    "prompt": "Choose the correct sentence:",
+    "options": [
+      {
+        "label": "She go to school every day.",
+        "score": 0
+      },
+      {
+        "label": "She goes to school every day.",
+        "score": 2
+      },
+      {
+        "label": "She going to school every day.",
+        "score": 0
+      }
+    ],
+    "sort_order": 0
+  },
+  {
+    "exam_slug": "english-basic",
+    "external_id": "eng-q2",
+    "prompt": "A paragraph usually needs:",
+    "options": [
+      {
+        "label": "One clear idea with supporting sentences",
+        "score": 2
+      },
+      {
+        "label": "Many random topics in one block",
+        "score": 0
+      },
+      {
+        "label": "Only questions, no answers",
+        "score": 0
+      }
+    ],
+    "sort_order": 1
+  }
+]

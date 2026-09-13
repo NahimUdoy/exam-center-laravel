@@ -1,0 +1,673 @@
+[
+  {
+    "slug": "pte-pathway-proficient",
+    "exam_slug": "pte",
+    "category": "pathway",
+    "title": "PTE Academic Pathway Certificate",
+    "subtitle": "Awarded for completing the full PTE Academic practice pathway with consistent mock performance",
+    "status": "earned",
+    "score_label": "Predicted Score",
+    "score_value": "72",
+    "issued_on": "12 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-PATH-2026-0912",
+      "hours_completed": 48,
+      "modules": [
+        "Speaking",
+        "Writing",
+        "Reading",
+        "Listening",
+        "Full Mock A"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "pte-module-speaking",
+    "exam_slug": "pte",
+    "category": "module",
+    "title": "PTE Speaking Mastery",
+    "subtitle": "Recognizes fluency-focused completion of Read Aloud, Repeat Sentence, Describe Image, Re-tell Lecture & ASQ",
+    "status": "earned",
+    "score_label": "Speaking Avg",
+    "score_value": "78",
+    "issued_on": "28 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-SPK-2026-0828",
+      "hours_completed": 16,
+      "modules": [
+        "Read Aloud",
+        "Repeat Sentence",
+        "Describe Image",
+        "Re-tell Lecture",
+        "ASQ"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "pte-module-writing",
+    "exam_slug": "pte",
+    "category": "module",
+    "title": "PTE Writing Excellence",
+    "subtitle": "Awarded for Summarize Written Text and Write Essay practice with target word-count discipline",
+    "status": "earned",
+    "score_label": "Writing Avg",
+    "score_value": "71",
+    "issued_on": "02 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-WRT-2026-0902",
+      "hours_completed": 12,
+      "modules": [
+        "Summarize Written Text",
+        "Write Essay"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "pte-module-reading",
+    "exam_slug": "pte",
+    "category": "module",
+    "title": "PTE Reading Specialist",
+    "subtitle": "Confirms mastery drills across RWFIB, MCQ, Re-order Paragraphs and Reading FIB",
+    "status": "earned",
+    "score_label": "Reading Avg",
+    "score_value": "74",
+    "issued_on": "08 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-RD-2026-0908",
+      "hours_completed": 14,
+      "modules": [
+        "RWFIB",
+        "MCQ",
+        "Re-order",
+        "RFIB"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "pte-module-listening",
+    "exam_slug": "pte",
+    "category": "module",
+    "title": "PTE Listening Specialist",
+    "subtitle": "Unlock by completing SST, WFD, Highlight Incorrect Words and Listening FIB sectionals",
+    "status": "locked",
+    "score_label": "Target",
+    "score_value": "75+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-LST-LOCKED",
+      "hours_completed": 9,
+      "modules": [
+        "SST",
+        "WFD",
+        "HIW",
+        "LFIB"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "pte-mock-full-a",
+    "exam_slug": "pte",
+    "category": "mock",
+    "title": "PTE Full Mock A Achievement",
+    "subtitle": "Issued after completing Full Mock A under timed exam conditions",
+    "status": "earned",
+    "score_label": "Mock Score",
+    "score_value": "69",
+    "issued_on": "10 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-MOCKA-2026-0910",
+      "hours_completed": 2,
+      "modules": [
+        "Full Mock A",
+        "53 Questions"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "pte-mock-full-b",
+    "exam_slug": "pte",
+    "category": "mock",
+    "title": "PTE Full Mock B Achievement",
+    "subtitle": "Finish PTE Full Mock B with AI scoring enabled to unlock",
+    "status": "pending",
+    "score_label": "Target",
+    "score_value": "75+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-PTE-MOCKB-PENDING",
+      "hours_completed": 0,
+      "modules": [
+        "Full Mock B"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "ielts-pathway-band",
+    "exam_slug": "ielts",
+    "category": "pathway",
+    "title": "IELTS Academic Readiness Certificate",
+    "subtitle": "Issued for balanced practice across Listening, Reading, Writing and Speaking",
+    "status": "earned",
+    "score_label": "Predicted Band",
+    "score_value": "7.0",
+    "issued_on": "05 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-PATH-2026-0905",
+      "hours_completed": 52,
+      "modules": [
+        "Listening",
+        "Reading",
+        "Writing",
+        "Speaking"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "ielts-module-listening",
+    "exam_slug": "ielts",
+    "category": "module",
+    "title": "IELTS Listening Certificate",
+    "subtitle": "Recognizes completion of Cambridge-style listening sectionals",
+    "status": "earned",
+    "score_label": "Listening Band",
+    "score_value": "7.5",
+    "issued_on": "22 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-LST-2026-0822",
+      "hours_completed": 14,
+      "modules": [
+        "Section 1–4",
+        "Map Labeling",
+        "MCQ"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "ielts-module-reading",
+    "exam_slug": "ielts",
+    "category": "module",
+    "title": "IELTS Reading Specialist",
+    "subtitle": "Complete 3 Cambridge reading mocks to unlock this credential",
+    "status": "locked",
+    "score_label": "Target Band",
+    "score_value": "7.5",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-RD-LOCKED",
+      "hours_completed": 8,
+      "modules": [
+        "Cambridge Reading",
+        "TFNG",
+        "Matching"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "ielts-module-writing",
+    "exam_slug": "ielts",
+    "category": "module",
+    "title": "IELTS Writing Certificate",
+    "subtitle": "Awarded for Task 1 and Task 2 essay practice with structure feedback",
+    "status": "earned",
+    "score_label": "Writing Band",
+    "score_value": "6.5",
+    "issued_on": "30 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-WRT-2026-0830",
+      "hours_completed": 18,
+      "modules": [
+        "Task 1",
+        "Task 2",
+        "Essay Sets"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "ielts-module-speaking",
+    "exam_slug": "ielts",
+    "category": "module",
+    "title": "IELTS Speaking Certificate",
+    "subtitle": "Cue card and interview pack completion across Parts 1–3",
+    "status": "earned",
+    "score_label": "Speaking Band",
+    "score_value": "7.0",
+    "issued_on": "01 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-SPK-2026-0901",
+      "hours_completed": 11,
+      "modules": [
+        "Part 1",
+        "Cue Cards",
+        "Part 3"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "ielts-mock-full",
+    "exam_slug": "ielts",
+    "category": "mock",
+    "title": "IELTS Full Mock Certificate",
+    "subtitle": "Pending submission of IELTS Full Mock Session 01",
+    "status": "pending",
+    "score_label": "Target Band",
+    "score_value": "7.0+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-IELTS-MOCK-PENDING",
+      "hours_completed": 0,
+      "modules": [
+        "Full Mock Session 01"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "bba-pathway-entrance",
+    "exam_slug": "bba",
+    "category": "pathway",
+    "title": "BBA Entrance Prep Certificate",
+    "subtitle": "Confirms completion of quant, verbal and logic sectional preparation",
+    "status": "earned",
+    "score_label": "Aptitude Score",
+    "score_value": "82%",
+    "issued_on": "01 Sep 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-PATH-2026-0901",
+      "hours_completed": 30,
+      "modules": [
+        "Quant",
+        "Verbal",
+        "Logic"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "bba-module-quant",
+    "exam_slug": "bba",
+    "category": "module",
+    "title": "BBA Quantitative Aptitude",
+    "subtitle": "Awarded for timed quantitative drills and accuracy milestones",
+    "status": "earned",
+    "score_label": "Quant Score",
+    "score_value": "85%",
+    "issued_on": "18 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-QNT-2026-0818",
+      "hours_completed": 12,
+      "modules": [
+        "Arithmetic",
+        "Algebra",
+        "Data"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "bba-module-verbal",
+    "exam_slug": "bba",
+    "category": "module",
+    "title": "BBA Verbal Ability",
+    "subtitle": "Reading comprehension, grammar and vocabulary pathway certificate",
+    "status": "earned",
+    "score_label": "Verbal Score",
+    "score_value": "79%",
+    "issued_on": "24 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-VRB-2026-0824",
+      "hours_completed": 10,
+      "modules": [
+        "RC",
+        "Grammar",
+        "Vocab"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "bba-module-logic",
+    "exam_slug": "bba",
+    "category": "module",
+    "title": "BBA Logical Reasoning",
+    "subtitle": "Complete advanced logic sectional set to unlock",
+    "status": "locked",
+    "score_label": "Target",
+    "score_value": "80%+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-LOG-LOCKED",
+      "hours_completed": 6,
+      "modules": [
+        "Puzzles",
+        "Syllogism",
+        "Series"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "bba-mock-full",
+    "exam_slug": "bba",
+    "category": "mock",
+    "title": "BBA Full Mock Certificate",
+    "subtitle": "Issued after Full Mock 01 under exam timing",
+    "status": "earned",
+    "score_label": "Mock Score",
+    "score_value": "78%",
+    "issued_on": "29 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-MOCK-2026-0829",
+      "hours_completed": 1.5,
+      "modules": [
+        "Full Mock 01",
+        "100 Questions"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "bba-mock-full-02",
+    "exam_slug": "bba",
+    "category": "mock",
+    "title": "BBA Full Mock 02 Achievement",
+    "subtitle": "Pending completion of University pattern Full Mock 02",
+    "status": "pending",
+    "score_label": "Target",
+    "score_value": "85%+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BBA-MOCK2-PENDING",
+      "hours_completed": 0,
+      "modules": [
+        "Full Mock 02"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "mba-pathway-aptitude",
+    "exam_slug": "mba",
+    "category": "pathway",
+    "title": "MBA Aptitude Pathway Certificate",
+    "subtitle": "Pending final full mock review across Quant, CR and RC",
+    "status": "pending",
+    "score_label": "Percentile",
+    "score_value": "—",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-PATH-PENDING",
+      "hours_completed": 18,
+      "modules": [
+        "Quant",
+        "CR",
+        "RC"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "mba-module-cr",
+    "exam_slug": "mba",
+    "category": "module",
+    "title": "Critical Reasoning Certificate",
+    "subtitle": "Awarded for assumptions, weaken/strengthen and inference drills",
+    "status": "earned",
+    "score_label": "CR Accuracy",
+    "score_value": "76%",
+    "issued_on": "15 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-CR-2026-0815",
+      "hours_completed": 9,
+      "modules": [
+        "Assumptions",
+        "Weaken/Strengthen",
+        "Inference"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "mba-module-quant",
+    "exam_slug": "mba",
+    "category": "module",
+    "title": "MBA Quantitative Certificate",
+    "subtitle": "Complete advanced quant pack to unlock this credential",
+    "status": "locked",
+    "score_label": "Target",
+    "score_value": "80%+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-QNT-LOCKED",
+      "hours_completed": 7,
+      "modules": [
+        "Problem Solving",
+        "Data Sufficiency"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "mba-module-case",
+    "exam_slug": "mba",
+    "category": "module",
+    "title": "MBA Case Analysis Certificate",
+    "subtitle": "Finish Case Analysis Writing + GD/PI simulation to unlock",
+    "status": "locked",
+    "score_label": "Target",
+    "score_value": "Pass",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-CASE-LOCKED",
+      "hours_completed": 4,
+      "modules": [
+        "Case Writing",
+        "GD/PI"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "mba-module-gdpi",
+    "exam_slug": "mba",
+    "category": "module",
+    "title": "GD / PI Simulation Certificate",
+    "subtitle": "Issued for completing group discussion and interview simulations",
+    "status": "earned",
+    "score_label": "Interview Score",
+    "score_value": "B+",
+    "issued_on": "25 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-GDPI-2026-0825",
+      "hours_completed": 6,
+      "modules": [
+        "Group Discussion",
+        "Personal Interview"
+      ],
+      "level": "Proficient"
+    }
+  },
+  {
+    "slug": "mba-mock-full",
+    "exam_slug": "mba",
+    "category": "mock",
+    "title": "MBA Full Mock Certificate",
+    "subtitle": "Complete MBA Aptitude Full Mock 01 to earn this credential",
+    "status": "pending",
+    "score_label": "Target Percentile",
+    "score_value": "90+",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-MBA-MOCK-PENDING",
+      "hours_completed": 0,
+      "modules": [
+        "Full Mock 01"
+      ],
+      "level": "Distinction"
+    }
+  },
+  {
+    "slug": "eng-pathway-basics",
+    "exam_slug": "english-basic",
+    "category": "pathway",
+    "title": "English Basics Completion",
+    "subtitle": "Awarded for finishing foundation reading, listening, writing and speaking",
+    "status": "earned",
+    "score_label": "Level",
+    "score_value": "A2+",
+    "issued_on": "20 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-PATH-2026-0820",
+      "hours_completed": 22,
+      "modules": [
+        "Reading",
+        "Listening",
+        "Writing",
+        "Speaking"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "eng-module-grammar",
+    "exam_slug": "english-basic",
+    "category": "module",
+    "title": "Grammar Foundations Certificate",
+    "subtitle": "Recognizes core grammar pathway completion for beginners",
+    "status": "earned",
+    "score_label": "Accuracy",
+    "score_value": "88%",
+    "issued_on": "10 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-GRM-2026-0810",
+      "hours_completed": 8,
+      "modules": [
+        "Tenses",
+        "Articles",
+        "Prepositions"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "eng-module-vocab",
+    "exam_slug": "english-basic",
+    "category": "module",
+    "title": "Vocabulary Builder Certificate",
+    "subtitle": "Awarded for daily vocab and usage drills",
+    "status": "earned",
+    "score_label": "Words Mastered",
+    "score_value": "420",
+    "issued_on": "14 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-VOC-2026-0814",
+      "hours_completed": 7,
+      "modules": [
+        "Word Lists",
+        "Usage",
+        "Synonyms"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "eng-module-speaking",
+    "exam_slug": "english-basic",
+    "category": "module",
+    "title": "Spoken Fluency Starter",
+    "subtitle": "Complete Self-Intro Fluency pack to unlock",
+    "status": "locked",
+    "score_label": "Target",
+    "score_value": "Pass",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-SPK-LOCKED",
+      "hours_completed": 3,
+      "modules": [
+        "Self Intro",
+        "Daily Prompts"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "eng-module-writing",
+    "exam_slug": "english-basic",
+    "category": "module",
+    "title": "Paragraph Builder Certificate",
+    "subtitle": "Pending Paragraph Builder course completion",
+    "status": "pending",
+    "score_label": "Target",
+    "score_value": "Pass",
+    "issued_on": null,
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-WRT-PENDING",
+      "hours_completed": 2,
+      "modules": [
+        "Sentence → Paragraph"
+      ],
+      "level": "Foundation"
+    }
+  },
+  {
+    "slug": "eng-mock-placement",
+    "exam_slug": "english-basic",
+    "category": "mock",
+    "title": "Placement Full Check Certificate",
+    "subtitle": "Issued after mixed-skills placement mock",
+    "status": "earned",
+    "score_label": "Placement",
+    "score_value": "A2",
+    "issued_on": "19 Aug 2026",
+    "meta": {
+      "recipient": "NextVerseSkill",
+      "credential_id": "NV-BASIC-PLACE-2026-0819",
+      "hours_completed": 1,
+      "modules": [
+        "Placement Full Check"
+      ],
+      "level": "Foundation"
+    }
+  }
+]

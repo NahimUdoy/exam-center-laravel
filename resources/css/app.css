@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0b1f44;
+  --mist: #f5f8fd;
+  --brand: #2563eb;
+  --line: rgba(15, 40, 80, 0.08);
+  --shadow: 0 20px 50px rgba(37, 99, 235, 0.1);
+  --shadow-lg: 0 28px 70px rgba(15, 40, 80, 0.14);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--mist);
+  color: var(--ink);
+}
+
+.font-display { font-family: Sora, system-ui, sans-serif; letter-spacing: -0.03em; }
+.font-hand, .hand-note { font-family: Caveat, cursive; color: var(--brand); line-height: 1.15; }
+
+.premium-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: 1.25rem;
+}
+
+.bg-hero-premium {
+  background:
+    radial-gradient(ellipse 70% 55% at 12% 30%, rgba(37, 99, 235, 0.14), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 88% 20%, rgba(96, 165, 250, 0.16), transparent 50%),
+    linear-gradient(180deg, #ffffff 0%, #f3f7ff 55%, #eaf1ff 100%);
+}
+
+.bg-aurora {
+  background:
+    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(37, 99, 235, 0.12), transparent 55%),
+    linear-gradient(180deg, #f8fbff 0%, #f5f8fd 40%, #eef4ff 100%);
+}
+
+.bg-mesh {
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(37, 99, 235, 0.22), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 15%, rgba(56, 189, 248, 0.18), transparent 50%),
+    linear-gradient(160deg, #061018 0%, #0b1a2b 45%, #0a1624 100%);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-rise { animation: rise 0.7s ease-out both; }
+.animate-float { animation: float 5.5s ease-in-out infinite; }
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.92); opacity: 0.55; }
+  70% { transform: scale(1.18); opacity: 0; }
+  100% { transform: scale(1.18); opacity: 0; }
+}
+.animate-pulse-ring { animation: pulse-ring 2.2s ease-out infinite; }
+
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(28px, -18px) scale(1.08); }
+  66% { transform: translate(-18px, 14px) scale(0.96); }
+}
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes course-in {
+  from { opacity: 0; transform: translateY(28px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes course-spin { to { transform: rotate(360deg); } }
+@keyframes course-mesh {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes shine-sweep {
+  from { transform: translateX(-140%) skewX(-16deg); }
+  to { transform: translateX(160%) skewX(-16deg); }
+}
+@keyframes bar-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes grid-pan {
+  from { background-position: 0 0; }
+  to { background-position: 56px 56px; }
+}
+@keyframes next-glow {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--guide, #2563eb) 35%, transparent); }
+  50% { box-shadow: 0 0 0 8px color-mix(in oklab, var(--guide, #2563eb) 0%, transparent); }
+}
+
+[x-cloak] { display: none !important; }
+
+.courses-stage {
+  scroll-margin-top: 5.5rem;
+  background:
+    radial-gradient(ellipse 70% 50% at 12% 18%, rgba(239, 68, 68, 0.16), transparent 50%),
+    radial-gradient(ellipse 55% 45% at 88% 12%, rgba(56, 189, 248, 0.16), transparent 48%),
+    radial-gradient(ellipse 50% 40% at 72% 88%, rgba(139, 92, 246, 0.14), transparent 50%),
+    linear-gradient(180deg, #071428 0%, #0b1f44 48%, #08152e 100%);
+}
+.courses-grid-pan {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+  animation: grid-pan 18s linear infinite;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 78%);
+}
+.course-orb { animation: orb-drift 14s ease-in-out infinite; }
+.courses-marquee { mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent); }
+.courses-marquee-track { animation: marquee-x 32s linear infinite; }
+.courses-marquee:hover .courses-marquee-track { animation-play-state: paused; }
+.course-card-in { animation: course-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i) * 110ms); }
+.course-halo {
+  position: absolute; inset: -55%;
+  background: conic-gradient(from 180deg, transparent 0%, var(--course-glow) 18%, transparent 42%);
+  opacity: 0; filter: blur(28px); animation: course-spin 10s linear infinite; pointer-events: none;
+}
+.course-card:hover .course-halo { opacity: 0.85; }
+.course-spotlight {
+  position: absolute; inset: 0;
+  background: radial-gradient(420px circle at var(--mx) var(--my), color-mix(in oklab, var(--course) 22%, transparent), transparent 58%);
+  opacity: 0; pointer-events: none; z-index: 1;
+}
+.course-card:hover .course-spotlight { opacity: 1; }
+.course-mesh {
+  background: linear-gradient(120deg, transparent 20%, color-mix(in oklab, var(--course) 35%, transparent) 50%, transparent 80%);
+  background-size: 200% 200%;
+  animation: course-mesh 6s ease-in-out infinite alternate;
+  opacity: 0.55;
+}
+.course-bar { transform-origin: left; animation: bar-fill 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.course-cta { position: relative; overflow: hidden; background: var(--course); box-shadow: 0 10px 24px color-mix(in oklab, var(--course) 40%, transparent); }
+.course-cta::after {
+  content: ""; position: absolute; inset: 0; width: 45%;
+  background: linear-gradient(110deg, transparent 0%, rgba(255,255,255,0.45) 50%, transparent 100%);
+  transform: translateX(-140%) skewX(-16deg);
+}
+.course-card:hover .course-cta::after { animation: shine-sweep 0.85s ease; }
+.app-card { transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease; }
+.app-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.progress-fill { transition: width 0.35s ease; }
+.guide-next { --guide: var(--brand); animation: next-glow 2.2s ease-out infinite; }
+.guide-pulse { position: relative; }
+.guide-pulse::after {
+  content: ""; position: absolute; inset: -4px; border-radius: inherit;
+  border: 2px solid color-mix(in oklab, var(--guide, #2563eb) 55%, white);
+  animation: pulse-ring 2.2s ease-out infinite; pointer-events: none;
+}
+.scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.35); border-radius: 999px; }
+
+.nvs-modal-layer { z-index: 200; }
+.lesson-mark {
+  background: color-mix(in oklab, #059669 22%, white);
+  color: #064e3b;
+  font-weight: 800;
+  padding: 0.02em 0.12em;
+  border-radius: 0.3em;
+}
+.learn-step {
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.learn-step[aria-current="step"] {
+  background: #0b1f44;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(11, 31, 68, 0.22);
+}
+.quiz-choice {
+  min-height: 3.35rem;
+}
+.progress-ring {
+  background: conic-gradient(#059669 var(--pct), #d1fae5 0);
+}
+
+@media print {
+  .print\:hidden { display: none !important; }
+}

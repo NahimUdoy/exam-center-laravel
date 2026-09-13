@@ -1,0 +1,5 @@
+[
+  { "slug": "pathway", "label": "Course Pathways", "hint": "Full program completion credentials" },
+  { "slug": "module", "label": "Module Certificates", "hint": "Skill and section mastery awards" },
+  { "slug": "mock", "label": "Mock Achievements", "hint": "Timed exam simulation credentials" }
+]

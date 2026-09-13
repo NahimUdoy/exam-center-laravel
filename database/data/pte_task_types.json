@@ -1,0 +1,22 @@
+[
+  { "slug": "read-aloud", "label": "Read Aloud", "short": "RA", "color": "#f06a4e" },
+  { "slug": "repeat-sentence", "label": "Repeat Sentence", "short": "RS", "color": "#f06a4e" },
+  { "slug": "describe-image", "label": "Describe Image", "short": "DI", "color": "#f06a4e" },
+  { "slug": "retell-lecture", "label": "Re-tell Lecture", "short": "RL", "color": "#f06a4e" },
+  { "slug": "answer-short", "label": "Answer Short Question", "short": "ASQ", "color": "#f06a4e" },
+  { "slug": "swt", "label": "Summarize Written Text", "short": "SWT", "color": "#0ea5e9" },
+  { "slug": "essay", "label": "Write Essay", "short": "WE", "color": "#0ea5e9" },
+  { "slug": "rw-fib", "label": "R&W Fill in the Blanks", "short": "RWFIB", "color": "#16a34a" },
+  { "slug": "mc-multi", "label": "MCQ Multiple Answers", "short": "MCMA", "color": "#16a34a" },
+  { "slug": "reorder", "label": "Re-order Paragraphs", "short": "RO", "color": "#16a34a" },
+  { "slug": "r-fib", "label": "Reading Fill in the Blanks", "short": "RFIB", "color": "#16a34a" },
+  { "slug": "mc-single", "label": "MCQ Single Answer", "short": "MCSA", "color": "#16a34a" },
+  { "slug": "sst", "label": "Summarize Spoken Text", "short": "SST", "color": "#7c3aed" },
+  { "slug": "l-mc-multi", "label": "Listening MCQ Multi", "short": "L-MCMA", "color": "#7c3aed" },
+  { "slug": "l-fib", "label": "Listening Fill in Blanks", "short": "LFIB", "color": "#7c3aed" },
+  { "slug": "highlight-summary", "label": "Highlight Correct Summary", "short": "HCS", "color": "#7c3aed" },
+  { "slug": "l-mc-single", "label": "Listening MCQ Single", "short": "L-MCSA", "color": "#7c3aed" },
+  { "slug": "missing-word", "label": "Select Missing Word", "short": "SMW", "color": "#7c3aed" },
+  { "slug": "highlight-incorrect", "label": "Highlight Incorrect Words", "short": "HIW", "color": "#7c3aed" },
+  { "slug": "wfd", "label": "Write From Dictation", "short": "WFD", "color": "#7c3aed" }
+]

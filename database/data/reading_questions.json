@@ -1,0 +1,197 @@
+[
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 1,
+    "part": 1,
+    "prompt": "Which statement best summarizes paragraph A?",
+    "options": [
+      "Japanese households historically preferred speculative investments.",
+      "Saving habits were shaped by a preference for long-term security.",
+      "Government bonds were unpopular among ordinary families.",
+      "Luxury spending drove Japan’s early industrial growth."
+    ],
+    "correct_index": 1,
+    "skill_tag": "Main idea",
+    "tip": "Summaries must match the paragraph’s central idea — not a side detail."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 2,
+    "part": 1,
+    "prompt": "The phrase “land of the rising sum” mainly refers to:",
+    "options": [
+      "A tourism campaign for sunrise destinations.",
+      "Military spending after the war.",
+      "Collective household deposits powering recovery.",
+      "A decline in postal savings accounts."
+    ],
+    "correct_index": 2,
+    "skill_tag": "Vocabulary in context",
+    "tip": "Go back to the sentence that introduces the phrase and read one line before/after."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 3,
+    "part": 1,
+    "prompt": "According to paragraph B, thrift contributed to recovery by:",
+    "options": [
+      "Redirecting capital into productive national infrastructure.",
+      "Encouraging imports of luxury goods.",
+      "Reducing employment in factories.",
+      "Eliminating the need for export industries."
+    ],
+    "correct_index": 0,
+    "skill_tag": "Detail / evidence",
+    "tip": "Look for cause → effect language (instead, financed, rebuilt)."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 4,
+    "part": 1,
+    "prompt": "What tension is described in paragraph C?",
+    "options": [
+      "High interest rates discouraged all forms of saving.",
+      "Continued saving collided with weak investment demand.",
+      "Young workers rejected any form of financial caution.",
+      "Firms invested too aggressively in risky ventures."
+    ],
+    "correct_index": 1,
+    "skill_tag": "Inference",
+    "tip": "Tension = two forces pulling opposite ways. Find both sides in the paragraph."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 5,
+    "part": 2,
+    "prompt": "Critics in paragraph C suggest that prudence:",
+    "options": [
+      "Always guarantees rapid innovation.",
+      "May limit demand and risk-taking.",
+      "Was invented by foreign journalists.",
+      "Only affects government policy, not households."
+    ],
+    "correct_index": 1,
+    "skill_tag": "Writer’s view / critics",
+    "tip": "Separate the writer’s voice from critics’ claims."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 6,
+    "part": 2,
+    "prompt": "Paragraph D implies that young adults today:",
+    "options": [
+      "Have abandoned security entirely.",
+      "Only invest in domestic postal accounts.",
+      "Blend security goals with global digital investing.",
+      "Reject index funds as too modern."
+    ],
+    "correct_index": 2,
+    "skill_tag": "Implication",
+    "tip": "‘Implies’ means the answer is strongly suggested, not always quoted word-for-word."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 7,
+    "part": 2,
+    "prompt": "Which idea links paragraphs A and D?",
+    "options": [
+      "Security remains valued, but methods of pursuing it evolve.",
+      "Saving culture has been completely replaced by luxury spending.",
+      "Foreign correspondents still define economic policy.",
+      "Interest rates are no longer relevant to households."
+    ],
+    "correct_index": 0,
+    "skill_tag": "Paragraph linking",
+    "tip": "Find the shared theme across distant paragraphs."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 8,
+    "part": 2,
+    "prompt": "A suitable title for the whole passage would be:",
+    "options": [
+      "Why Japan Banned Overseas Funds",
+      "From Household Thrift to Digital Yield",
+      "The End of Manufacturing in Asia",
+      "Postal Services and Tourism Marketing"
+    ],
+    "correct_index": 1,
+    "skill_tag": "Global understanding",
+    "tip": "A good title covers the full arc of the passage, not one paragraph only."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 9,
+    "part": 3,
+    "prompt": "The writer’s overall tone is best described as:",
+    "options": [
+      "Hostile and sarcastic",
+      "Neutral and analytical",
+      "Celebratory without critique",
+      "Confused and contradictory"
+    ],
+    "correct_index": 1,
+    "skill_tag": "Tone",
+    "tip": "Tone comes from word choice across the whole text — avoid extremes unless clearly shown."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 10,
+    "part": 3,
+    "prompt": "Which claim is supported by the passage?",
+    "options": [
+      "Household saving never influenced national recovery.",
+      "Low rates removed every reason to save.",
+      "Cultural thrift interacted with changing economic conditions over time.",
+      "Fintech erased all preference for security."
+    ],
+    "correct_index": 2,
+    "skill_tag": "Supported claims",
+    "tip": "Eliminate options that use absolute words (never / every / all) unless the text does."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 11,
+    "part": 3,
+    "prompt": "“Quietly rebuilt a modern economy” most nearly means:",
+    "options": [
+      "Recovery happened without dramatic public spectacle.",
+      "Factories were constructed overnight by the state alone.",
+      "Households refused to participate in growth.",
+      "Foreign aid replaced domestic capital entirely."
+    ],
+    "correct_index": 0,
+    "skill_tag": "Paraphrase",
+    "tip": "Match meaning, not just individual words."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 12,
+    "part": 3,
+    "prompt": "What is one change mentioned for younger savers?",
+    "options": [
+      "They avoid all digital tools.",
+      "They explore overseas markets through apps and funds.",
+      "They only buy government bonds.",
+      "They no longer value buffers against uncertainty."
+    ],
+    "correct_index": 1,
+    "skill_tag": "Specific detail",
+    "tip": "Scan for ‘young’ / ‘today’ / ‘apps’ keywords, then verify the full sentence."
+  },
+  {
+    "mock_slug": "ielts-r-rising-sum",
+    "number": 13,
+    "part": 3,
+    "prompt": "The passage suggests policymakers found it difficult to:",
+    "options": [
+      "Print more luxury advertisements.",
+      "Turn private caution into broader economic growth.",
+      "Close postal savings accounts permanently.",
+      "Stop young adults from using fintech."
+    ],
+    "correct_index": 1,
+    "skill_tag": "Inference",
+    "tip": "‘Suggests’ = conclusion drawn from stated facts about policy tension."
+  }
+]

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Campus map changes 2000-2020">
+  <rect width="720" height="400" fill="#eff6ff"/>
+  <text x="32" y="38" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">Campus map changes 20002020</text>
+  <rect x="48" y="72" width="280" height="280" rx="18" fill="#dbeafe"/>
+  <text x="68" y="100" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">2000</text>
+  <rect x="80" y="128" width="90" height="64" rx="8" fill="#93c5fd"/>
+  <text x="96" y="164" font-family="system-ui,sans-serif" font-size="12" fill="#1e3a8a">Library</text>
+  <rect x="196" y="168" width="96" height="70" rx="8" fill="#60a5fa"/>
+  <text x="214" y="208" font-family="system-ui,sans-serif" font-size="12" fill="#1e3a8a">Sports</text>
+  <rect x="392" y="72" width="280" height="280" rx="18" fill="#dbeafe"/>
+  <text x="412" y="100" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">2020</text>
+  <rect x="424" y="120" width="130" height="72" rx="8" fill="#2563eb"/>
+  <text x="444" y="160" font-family="system-ui,sans-serif" font-size="12" fill="#fff">New library wing</text>
+  <rect x="424" y="214" width="96" height="64" rx="8" fill="#38bdf8"/>
+  <text x="438" y="250" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">Sports field</text>
+  <circle cx="612" cy="292" r="16" fill="#f59e0b"/>
+  <text x="540" y="298" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#9a3412">Tram stop</text>
+</svg>

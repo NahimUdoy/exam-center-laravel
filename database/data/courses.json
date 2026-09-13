@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "ielts",
+    "name": "IELTS",
+    "tag": "Academic path",
+    "color": "#ef4444",
+    "soft": "#fef2f2",
+    "glow": "rgba(239, 68, 68, 0.45)",
+    "cover_image": "",
+    "total": "200+ Practice Sets",
+    "sort_order": 1,
+    "modules": [
+      { "name": "Listening", "count": "40+ sets", "value": 40, "icon": "Headphones" },
+      { "name": "Reading", "count": "50+ sets", "value": 50, "icon": "BookOpen" },
+      { "name": "Writing", "count": "30+ sets", "value": 30, "icon": "PenLine" },
+      { "name": "Speaking", "count": "60+ sets", "value": 60, "icon": "Mic2" }
+    ]
+  },
+  {
+    "slug": "pte",
+    "name": "PTE",
+    "tag": "Academic path",
+    "color": "#2563eb",
+    "soft": "#eff6ff",
+    "glow": "rgba(37, 99, 235, 0.5)",
+    "cover_image": "",
+    "total": "160+ Practice Sets",
+    "sort_order": 2,
+    "modules": [
+      { "name": "Speaking", "count": "45+ sets", "value": 45, "icon": "Mic2" },
+      { "name": "Writing", "count": "35+ sets", "value": 35, "icon": "PenLine" },
+      { "name": "Reading", "count": "40+ sets", "value": 40, "icon": "BookOpen" },
+      { "name": "Listening", "count": "40+ sets", "value": 40, "icon": "Headphones" }
+    ]
+  },
+  {
+    "slug": "mba",
+    "name": "MBA",
+    "tag": "Admission path",
+    "color": "#10b981",
+    "soft": "#ecfdf5",
+    "glow": "rgba(16, 185, 129, 0.45)",
+    "cover_image": "",
+    "total": "155+ Practice Sets",
+    "sort_order": 3,
+    "modules": [
+      { "name": "Quantitative", "count": "50+ sets", "value": 50, "icon": "Calculator" },
+      { "name": "Verbal", "count": "40+ sets", "value": 40, "icon": "Languages" },
+      { "name": "Data Interpretation", "count": "30+ sets", "value": 30, "icon": "PieChart" },
+      { "name": "Logical Reasoning", "count": "35+ sets", "value": 35, "icon": "Brain" }
+    ]
+  },
+  {
+    "slug": "bba",
+    "name": "BBA",
+    "tag": "Admission path",
+    "color": "#8b5cf6",
+    "soft": "#f5f3ff",
+    "glow": "rgba(139, 92, 246, 0.5)",
+    "cover_image": "",
+    "total": "145+ Practice Sets",
+    "sort_order": 4,
+    "modules": [
+      { "name": "English", "count": "40+ sets", "value": 40, "icon": "Languages" },
+      { "name": "Math", "count": "45+ sets", "value": 45, "icon": "Sigma" },
+      { "name": "Logical Reasoning", "count": "35+ sets", "value": 35, "icon": "Brain" },
+      { "name": "Business Awareness", "count": "25+ sets", "value": 25, "icon": "Briefcase" }
+    ]
+  }
+]

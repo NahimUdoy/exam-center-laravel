@@ -1,0 +1,6 @@
+[
+  { "slug": "speaking", "label": "Speaking", "color": "#f06a4e", "soft": "#ffe8e2", "icon": "Mic2", "sort_order": 1 },
+  { "slug": "writing", "label": "Writing", "color": "#0ea5e9", "soft": "#e0f2fe", "icon": "PenLine", "sort_order": 2 },
+  { "slug": "reading", "label": "Reading", "color": "#16a34a", "soft": "#dcfce7", "icon": "BookOpen", "sort_order": 3 },
+  { "slug": "listening", "label": "Listening", "color": "#7c3aed", "soft": "#ede9fe", "icon": "Headphones", "sort_order": 4 }
+]

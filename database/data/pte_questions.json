@@ -1,0 +1,1352 @@
+[
+  {
+    "external_id": "ra-1",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 1",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 0,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Urban planners argue that compact cities can reduce commuting times, lower emissions, and create more vibrant public spaces when housing, work, and leisure are carefully mixed."
+    }
+  },
+  {
+    "external_id": "ra-2",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 2",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 1,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Scientific collaboration across borders has accelerated vaccine research, allowing laboratories to share data quickly while maintaining rigorous standards of peer review."
+    }
+  },
+  {
+    "external_id": "ra-3",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 3",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 2,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Libraries remain essential community hubs, offering free access to knowledge, digital skills workshops, and quiet places for students who lack study space at home."
+    }
+  },
+  {
+    "external_id": "ra-4",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 4",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 3,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Climate models suggest that coastal cities must invest in resilient infrastructure, including elevated roads, restored wetlands, and early-warning systems for extreme weather."
+    }
+  },
+  {
+    "external_id": "ra-5",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 5",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 4,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Entrepreneurs often underestimate the time required to validate a product idea, yet disciplined customer interviews can prevent costly mistakes later in development."
+    }
+  },
+  {
+    "external_id": "ra-6",
+    "type": "read-aloud",
+    "section": "speaking-writing",
+    "title": "Read Aloud 6",
+    "instructions": "Look at the text below. In 35 seconds, you must read this text aloud as naturally and clearly as possible. You have 35 seconds to read aloud.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 5,
+    "payload": {
+      "prep_seconds": 35,
+      "record_seconds": 35,
+      "text": "Museum curators carefully balance preservation with public engagement, designing exhibitions that protect fragile artifacts while inviting visitors to explore history."
+    }
+  },
+  {
+    "external_id": "rs-1",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 1",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 6,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "The seminar on renewable energy starts at nine tomorrow morning."
+    }
+  },
+  {
+    "external_id": "rs-2",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 2",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 7,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "Please submit your assignment before the library closes tonight."
+    }
+  },
+  {
+    "external_id": "rs-3",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 3",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 8,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "Students should revise the chapter on photosynthesis carefully."
+    }
+  },
+  {
+    "external_id": "rs-4",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 4",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 9,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "The conference will be held in the main auditorium next Friday."
+    }
+  },
+  {
+    "external_id": "rs-5",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 5",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 10,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "Water scarcity is becoming a serious challenge in many regions."
+    }
+  },
+  {
+    "external_id": "rs-6",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 6",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 11,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "You can borrow up to four books with a standard membership card."
+    }
+  },
+  {
+    "external_id": "rs-7",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 7",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 12,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "The researcher published her findings in an international journal."
+    }
+  },
+  {
+    "external_id": "rs-8",
+    "type": "repeat-sentence",
+    "section": "speaking-writing",
+    "title": "Repeat Sentence 8",
+    "instructions": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 13,
+    "payload": {
+      "prep_seconds": 3,
+      "record_seconds": 15,
+      "audio_text": "Traffic congestion usually peaks during the early evening hours."
+    }
+  },
+  {
+    "external_id": "di-1",
+    "type": "describe-image",
+    "section": "speaking-writing",
+    "title": "Describe Image 1",
+    "instructions": "Look at the graph below. In 25 seconds, please speak into the microphone and describe in detail what the graph is showing. You will have 40 seconds to give your response.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 14,
+    "payload": {
+      "prep_seconds": 25,
+      "record_seconds": 40,
+      "image_title": "Average daily screen time by age group (hours)",
+      "image_hint": "Bar chart comparing ages 10–17, 18–29, 30–44, and 45+"
+    }
+  },
+  {
+    "external_id": "di-2",
+    "type": "describe-image",
+    "section": "speaking-writing",
+    "title": "Describe Image 2",
+    "instructions": "Look at the process diagram. In 25 seconds, prepare. Then describe the process clearly in 40 seconds.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 15,
+    "payload": {
+      "prep_seconds": 25,
+      "record_seconds": 40,
+      "image_title": "How recycled paper is produced",
+      "image_hint": "Collection → Sorting → Pulping → Cleaning → Rolling → Packaging"
+    }
+  },
+  {
+    "external_id": "di-3",
+    "type": "describe-image",
+    "section": "speaking-writing",
+    "title": "Describe Image 3",
+    "instructions": "Describe the map showing changes to a university campus between 2000 and 2020.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 16,
+    "payload": {
+      "prep_seconds": 25,
+      "record_seconds": 40,
+      "image_title": "Campus map changes 2000–2020",
+      "image_hint": "New library wing, relocated sports field, added tram stop"
+    }
+  },
+  {
+    "external_id": "rl-1",
+    "type": "retell-lecture",
+    "section": "speaking-writing",
+    "title": "Re-tell Lecture 1",
+    "instructions": "You will hear a lecture. After listening, in 10 seconds, please speak into the microphone and retell what you have just heard from the lecture in your own words. You will have 40 seconds to give your response.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 17,
+    "payload": {
+      "prep_seconds": 10,
+      "record_seconds": 40,
+      "audio_text": "Today I want to talk about urban heat islands. Cities trap more heat than surrounding rural areas because concrete and asphalt absorb sunlight, while limited trees reduce cooling through shade and evaporation. Researchers have found that nighttime temperatures in dense districts can stay several degrees higher, which increases energy demand for air conditioning and raises health risks for elderly residents. Simple interventions such as reflective roofs, street trees, and permeable pavements can lower surface temperatures and improve comfort without major redesign of the city."
+    }
+  },
+  {
+    "external_id": "asq-1",
+    "type": "answer-short",
+    "section": "speaking-writing",
+    "title": "Answer Short Question 1",
+    "instructions": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+    "correct_text": "A dentist",
+    "answer_key": {
+      "kind": "text",
+      "value": "a dentist"
+    },
+    "sort_order": 18,
+    "payload": {
+      "prep_seconds": 2,
+      "record_seconds": 10,
+      "audio_text": "What do we call a doctor who specializes in treating teeth?",
+      "prompt": "What do we call a doctor who specializes in treating teeth?"
+    }
+  },
+  {
+    "external_id": "asq-2",
+    "type": "answer-short",
+    "section": "speaking-writing",
+    "title": "Answer Short Question 2",
+    "instructions": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+    "correct_text": "Three hundred sixty-six",
+    "answer_key": {
+      "kind": "text",
+      "value": "three hundred sixty-six"
+    },
+    "sort_order": 19,
+    "payload": {
+      "prep_seconds": 2,
+      "record_seconds": 10,
+      "audio_text": "How many days are there in a leap year?",
+      "prompt": "How many days are there in a leap year?"
+    }
+  },
+  {
+    "external_id": "asq-3",
+    "type": "answer-short",
+    "section": "speaking-writing",
+    "title": "Answer Short Question 3",
+    "instructions": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+    "correct_text": "Cheap or inexpensive",
+    "answer_key": {
+      "kind": "text",
+      "value": "cheap"
+    },
+    "sort_order": 20,
+    "payload": {
+      "prep_seconds": 2,
+      "record_seconds": 10,
+      "audio_text": "What is the opposite of expensive?",
+      "prompt": "What is the opposite of expensive?"
+    }
+  },
+  {
+    "external_id": "asq-4",
+    "type": "answer-short",
+    "section": "speaking-writing",
+    "title": "Answer Short Question 4",
+    "instructions": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+    "correct_text": "Mars",
+    "answer_key": {
+      "kind": "text",
+      "value": "mars"
+    },
+    "sort_order": 21,
+    "payload": {
+      "prep_seconds": 2,
+      "record_seconds": 10,
+      "audio_text": "Which planet is known as the Red Planet?",
+      "prompt": "Which planet is known as the Red Planet?"
+    }
+  },
+  {
+    "external_id": "asq-5",
+    "type": "answer-short",
+    "section": "speaking-writing",
+    "title": "Answer Short Question 5",
+    "instructions": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+    "correct_text": "Honey",
+    "answer_key": {
+      "kind": "text",
+      "value": "honey"
+    },
+    "sort_order": 22,
+    "payload": {
+      "prep_seconds": 2,
+      "record_seconds": 10,
+      "audio_text": "What do bees produce?",
+      "prompt": "What do bees produce?"
+    }
+  },
+  {
+    "external_id": "swt-1",
+    "type": "swt",
+    "section": "speaking-writing",
+    "title": "Summarize Written Text 1",
+    "instructions": "Read the passage below and summarize it using one sentence. Type your response in the box at the bottom of the screen. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points in the passage.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 23,
+    "payload": {
+      "time_limit_seconds": 600,
+      "word_limit": {
+        "min": 5,
+        "max": 75
+      },
+      "text": "Remote work has shifted from a temporary emergency measure to a lasting feature of many industries. Companies report lower office costs and access to a wider talent pool, while employees value flexibility and reduced commuting. However, managers worry about weaker collaboration, uneven workloads, and the difficulty of mentoring junior staff online. Successful organizations are experimenting with hybrid schedules, clearer documentation habits, and intentional in-person days that protect focus time without abandoning teamwork."
+    }
+  },
+  {
+    "external_id": "essay-1",
+    "type": "essay",
+    "section": "speaking-writing",
+    "title": "Write Essay 1",
+    "instructions": "You will have 20 minutes to plan, write and revise an essay about the topic below. Your response will be judged on how well you develop a position, organize your ideas, present supporting details, and control the elements of standard written English. You should write 200-300 words.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 24,
+    "payload": {
+      "time_limit_seconds": 1200,
+      "word_limit": {
+        "min": 200,
+        "max": 300
+      },
+      "prompt": "Some people believe universities should focus mainly on practical job skills, while others argue that a broad liberal education is more valuable. Discuss both views and give your own opinion."
+    }
+  },
+  {
+    "external_id": "rwfib-1",
+    "type": "rw-fib",
+    "section": "reading",
+    "title": "R&W Fill in the Blanks 1",
+    "instructions": "Below is a text with blanks. Click on each blank, a list of choices will appear. Select the appropriate answer choice for each blank.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "livable",
+        "integrated"
+      ]
+    },
+    "sort_order": 25,
+    "payload": {
+      "passage_tokens": [
+        "Cities",
+        "can",
+        "become",
+        "more",
+        "___1___",
+        "when",
+        "public",
+        "transport",
+        "is",
+        "reliable,",
+        "affordable,",
+        "and",
+        "___2___",
+        "with",
+        "cycling",
+        "routes."
+      ],
+      "blanks": [
+        {
+          "id": "1",
+          "choices": [
+            "livable",
+            "literal",
+            "limited",
+            "private"
+          ]
+        },
+        {
+          "id": "2",
+          "choices": [
+            "integrated",
+            "ignored",
+            "invented",
+            "isolated"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "rwfib-2",
+    "type": "rw-fib",
+    "section": "reading",
+    "title": "R&W Fill in the Blanks 2",
+    "instructions": "Below is a text with blanks. Click on each blank, a list of choices will appear. Select the appropriate answer choice for each blank.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "spaced",
+        "cramming"
+      ]
+    },
+    "sort_order": 26,
+    "payload": {
+      "passage_tokens": [
+        "Effective",
+        "revision",
+        "depends",
+        "on",
+        "___1___",
+        "practice",
+        "rather",
+        "than",
+        "last-minute",
+        "___2___",
+        "before",
+        "an",
+        "exam."
+      ],
+      "blanks": [
+        {
+          "id": "1",
+          "choices": [
+            "spaced",
+            "rushed",
+            "random",
+            "silent"
+          ]
+        },
+        {
+          "id": "2",
+          "choices": [
+            "cramming",
+            "camping",
+            "crafting",
+            "claiming"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "rwfib-3",
+    "type": "rw-fib",
+    "section": "reading",
+    "title": "R&W Fill in the Blanks 3",
+    "instructions": "Below is a text with blanks. Click on each blank, a list of choices will appear. Select the appropriate answer choice for each blank.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "bleaching",
+        "ocean"
+      ]
+    },
+    "sort_order": 27,
+    "payload": {
+      "passage_tokens": [
+        "Marine",
+        "biologists",
+        "monitor",
+        "coral",
+        "reefs",
+        "to",
+        "detect",
+        "early",
+        "signs",
+        "of",
+        "___1___",
+        "caused",
+        "by",
+        "rising",
+        "___2___",
+        "temperatures."
+      ],
+      "blanks": [
+        {
+          "id": "1",
+          "choices": [
+            "bleaching",
+            "blending",
+            "breathing",
+            "borrowing"
+          ]
+        },
+        {
+          "id": "2",
+          "choices": [
+            "ocean",
+            "office",
+            "outer",
+            "ancient"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "rwfib-4",
+    "type": "rw-fib",
+    "section": "reading",
+    "title": "R&W Fill in the Blanks 4",
+    "instructions": "Below is a text with blanks. Click on each blank, a list of choices will appear. Select the appropriate answer choice for each blank.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "anticipate",
+        "sequence"
+      ]
+    },
+    "sort_order": 28,
+    "payload": {
+      "passage_tokens": [
+        "A",
+        "clear",
+        "thesis",
+        "statement",
+        "helps",
+        "readers",
+        "___1___",
+        "the",
+        "writer's",
+        "main",
+        "argument",
+        "and",
+        "follow",
+        "the",
+        "___2___",
+        "of",
+        "supporting",
+        "points."
+      ],
+      "blanks": [
+        {
+          "id": "1",
+          "choices": [
+            "anticipate",
+            "abandon",
+            "accuse",
+            "avoid"
+          ]
+        },
+        {
+          "id": "2",
+          "choices": [
+            "sequence",
+            "silence",
+            "shortage",
+            "shadow"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "mcma-1",
+    "type": "mc-multi",
+    "section": "reading",
+    "title": "Reading MCQ Multi 1",
+    "instructions": "Read the text and answer the question by selecting all the correct responses. More than one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "multi",
+      "indexes": [
+        0,
+        2,
+        3
+      ]
+    },
+    "sort_order": 29,
+    "payload": {
+      "multi": true,
+      "text": "Community gardens improve neighborhood cohesion, provide fresh produce, and create outdoor classrooms for children. They can also reduce food miles and offer mental-health benefits through regular contact with nature. Critics note that gardens require volunteer labor and secure land tenure to remain sustainable.",
+      "prompt": "Which of the following are mentioned as benefits of community gardens?",
+      "options": [
+        "Stronger social connections among neighbors",
+        "Immediate replacement of all supermarkets",
+        "Access to fresh food grown locally",
+        "Educational opportunities for children",
+        "Guaranteed government funding forever"
+      ]
+    }
+  },
+  {
+    "external_id": "mcma-2",
+    "type": "mc-multi",
+    "section": "reading",
+    "title": "Reading MCQ Multi 2",
+    "instructions": "Select all the correct responses. More than one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "multi",
+      "indexes": [
+        0,
+        2,
+        4
+      ]
+    },
+    "sort_order": 30,
+    "payload": {
+      "multi": true,
+      "text": "Open-source software thrives because developers worldwide can inspect code, fix bugs quickly, and propose new features. Companies adopt open-source tools to avoid vendor lock-in and to customize systems. Challenges include fragmented documentation and the need for skilled maintainers.",
+      "prompt": "According to the passage, open-source software can:",
+      "options": [
+        "Allow global collaboration on code improvements",
+        "Eliminate the need for any skilled maintainers",
+        "Help organizations avoid vendor lock-in",
+        "Always provide perfect documentation",
+        "Support customization of systems"
+      ]
+    }
+  },
+  {
+    "external_id": "ro-1",
+    "type": "reorder",
+    "section": "reading",
+    "title": "Re-order Paragraphs 1",
+    "instructions": "The text boxes in the left panel have been placed in a random order. Restore the original order by dragging the text boxes from the left panel to the right panel.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "order",
+      "ids": [
+        "a",
+        "b",
+        "d",
+        "c"
+      ]
+    },
+    "sort_order": 31,
+    "payload": {
+      "paragraphs": [
+        {
+          "id": "a",
+          "text": "First, researchers collect baseline measurements of air quality across several neighborhoods."
+        },
+        {
+          "id": "b",
+          "text": "They then install sensors on streetlights to track pollution throughout the day."
+        },
+        {
+          "id": "c",
+          "text": "Finally, the data informs city policies on traffic restrictions and green corridors."
+        },
+        {
+          "id": "d",
+          "text": "After several months, patterns emerge showing peaks near major intersections."
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "ro-2",
+    "type": "reorder",
+    "section": "reading",
+    "title": "Re-order Paragraphs 2",
+    "instructions": "Restore the original order of the paragraphs.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "order",
+      "ids": [
+        "a",
+        "d",
+        "b",
+        "c"
+      ]
+    },
+    "sort_order": 32,
+    "payload": {
+      "paragraphs": [
+        {
+          "id": "a",
+          "text": "Sleep pressure builds the longer a person stays awake."
+        },
+        {
+          "id": "b",
+          "text": "During deep sleep, the brain clears metabolic waste more efficiently."
+        },
+        {
+          "id": "c",
+          "text": "As a result, consistent sleep schedules support memory and mood."
+        },
+        {
+          "id": "d",
+          "text": "Circadian rhythms also influence when the body expects rest."
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "rfib-1",
+    "type": "r-fib",
+    "section": "reading",
+    "title": "Reading Fill in the Blanks 1",
+    "instructions": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "carefully",
+        "when"
+      ]
+    },
+    "sort_order": 33,
+    "payload": {
+      "passage_tokens": [
+        "Good",
+        "leaders",
+        "listen",
+        "___",
+        "feedback",
+        "and",
+        "adjust",
+        "plans",
+        "___",
+        "conditions",
+        "change."
+      ],
+      "word_bank": [
+        "before",
+        "when",
+        "carefully",
+        "never",
+        "loudly"
+      ]
+    }
+  },
+  {
+    "external_id": "rfib-2",
+    "type": "r-fib",
+    "section": "reading",
+    "title": "Reading Fill in the Blanks 2",
+    "instructions": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "moved",
+        "trade"
+      ]
+    },
+    "sort_order": 34,
+    "payload": {
+      "passage_tokens": [
+        "The",
+        "museum",
+        "exhibit",
+        "explains",
+        "how",
+        "ancient",
+        "traders",
+        "___",
+        "goods",
+        "across",
+        "long",
+        "___",
+        "routes."
+      ],
+      "word_bank": [
+        "desert",
+        "moved",
+        "ignored",
+        "trade",
+        "quietly"
+      ]
+    }
+  },
+  {
+    "external_id": "rfib-3",
+    "type": "r-fib",
+    "section": "reading",
+    "title": "Reading Fill in the Blanks 3",
+    "instructions": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "blanks",
+      "values": [
+        "highlight",
+        "recall"
+      ]
+    },
+    "sort_order": 35,
+    "payload": {
+      "passage_tokens": [
+        "Students",
+        "who",
+        "annotate",
+        "texts",
+        "tend",
+        "to",
+        "___",
+        "key",
+        "ideas",
+        "and",
+        "___",
+        "them",
+        "later."
+      ],
+      "word_bank": [
+        "recall",
+        "highlight",
+        "delete",
+        "forget",
+        "borrow"
+      ]
+    }
+  },
+  {
+    "external_id": "mcsa-1",
+    "type": "mc-single",
+    "section": "reading",
+    "title": "Reading MCQ Single 1",
+    "instructions": "Read the text and answer the multiple-choice question by selecting the correct response. Only one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 1
+    },
+    "sort_order": 36,
+    "payload": {
+      "text": "Although electric buses reduce local emissions, their environmental benefit depends on how the electricity is generated. If the grid relies heavily on coal, gains are smaller than when renewable sources dominate.",
+      "prompt": "What does the author emphasize?",
+      "options": [
+        "Electric buses always eliminate pollution completely",
+        "Grid energy sources affect the impact of electric buses",
+        "Coal plants are unrelated to transport policy",
+        "Renewable energy cannot power public transit"
+      ]
+    }
+  },
+  {
+    "external_id": "mcsa-2",
+    "type": "mc-single",
+    "section": "reading",
+    "title": "Reading MCQ Single 2",
+    "instructions": "Select the correct response. Only one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 2
+    },
+    "sort_order": 37,
+    "payload": {
+      "text": "Peer tutoring programs often help both partners: tutors reinforce their own understanding by explaining concepts, while tutees receive personalized support in a less formal setting than a lecture hall.",
+      "prompt": "According to the text, peer tutoring is beneficial because:",
+      "options": [
+        "Only tutors improve their grades",
+        "Lectures become unnecessary",
+        "Both tutors and tutees can gain from the exchange",
+        "It replaces all professional teachers"
+      ]
+    }
+  },
+  {
+    "external_id": "sst-1",
+    "type": "sst",
+    "section": "listening",
+    "title": "Summarize Spoken Text 1",
+    "instructions": "You will hear a short lecture. Write a summary for a fellow student who was not present at the lecture. You should write 50-70 words. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points presented in the lecture.",
+    "correct_text": null,
+    "answer_key": null,
+    "sort_order": 38,
+    "payload": {
+      "time_limit_seconds": 600,
+      "word_limit": {
+        "min": 50,
+        "max": 70
+      },
+      "audio_text": "In this talk I discuss microplastics in freshwater systems. Tiny plastic fragments enter rivers from clothing fibers, packaging waste, and tire wear. Once in the water, they absorb chemical pollutants and may be eaten by fish and insects, moving up the food chain. Scientists are developing better filters at wastewater plants and urging designers to reduce shedding from synthetic textiles. Public awareness campaigns also encourage people to wash clothes less frequently at lower temperatures."
+    }
+  },
+  {
+    "external_id": "lmcma-1",
+    "type": "l-mc-multi",
+    "section": "listening",
+    "title": "Listening MCQ Multi 1",
+    "instructions": "Listen to the recording and answer the question by selecting all the correct responses. You will need to select more than one response.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "multi",
+      "indexes": [
+        0,
+        1,
+        3
+      ]
+    },
+    "sort_order": 39,
+    "payload": {
+      "multi": true,
+      "audio_text": "Our campus wellness center now offers free counseling appointments, a sleep workshop every Thursday, and subsidized gym memberships for first-year students. Parking discounts are not included in this program.",
+      "prompt": "Which services are offered by the wellness center?",
+      "options": [
+        "Free counseling appointments",
+        "Thursday sleep workshops",
+        "Free campus parking for everyone",
+        "Subsidized gym memberships for first-years"
+      ]
+    }
+  },
+  {
+    "external_id": "lmcma-2",
+    "type": "l-mc-multi",
+    "section": "listening",
+    "title": "Listening MCQ Multi 2",
+    "instructions": "Select all the correct responses.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "multi",
+      "indexes": [
+        0,
+        1,
+        3
+      ]
+    },
+    "sort_order": 40,
+    "payload": {
+      "multi": true,
+      "audio_text": "The field trip will include a guided tour of the wetlands, a water-sampling activity, and a short quiz at the end. Lunch is not provided, so please bring your own food.",
+      "prompt": "What will participants do on the field trip?",
+      "options": [
+        "Take a guided wetlands tour",
+        "Collect water samples",
+        "Receive a free catered lunch",
+        "Complete a short quiz"
+      ]
+    }
+  },
+  {
+    "external_id": "lfib-1",
+    "type": "l-fib",
+    "section": "listening",
+    "title": "Listening Fill in the Blanks 1",
+    "instructions": "You will hear a recording. Type the missing words in each blank.",
+    "correct_text": "sculpture online",
+    "answer_key": {
+      "kind": "text",
+      "value": "sculpture online"
+    },
+    "sort_order": 41,
+    "payload": {
+      "audio_text": "The museum will open a new gallery dedicated to modern sculpture next month, and tickets can be booked online from Monday.",
+      "passage_tokens": [
+        "The",
+        "museum",
+        "will",
+        "open",
+        "a",
+        "new",
+        "gallery",
+        "dedicated",
+        "to",
+        "modern",
+        "___",
+        "next",
+        "month,",
+        "and",
+        "tickets",
+        "can",
+        "be",
+        "booked",
+        "___",
+        "from",
+        "Monday."
+      ]
+    }
+  },
+  {
+    "external_id": "lfib-2",
+    "type": "l-fib",
+    "section": "listening",
+    "title": "Listening Fill in the Blanks 2",
+    "instructions": "Type the missing words in each blank.",
+    "correct_text": "exercise stress",
+    "answer_key": {
+      "kind": "text",
+      "value": "exercise stress"
+    },
+    "sort_order": 42,
+    "payload": {
+      "audio_text": "Researchers found that brief daily exercise can improve concentration and reduce workplace stress among office employees.",
+      "passage_tokens": [
+        "Researchers",
+        "found",
+        "that",
+        "brief",
+        "daily",
+        "___",
+        "can",
+        "improve",
+        "concentration",
+        "and",
+        "reduce",
+        "workplace",
+        "___",
+        "among",
+        "office",
+        "employees."
+      ]
+    }
+  },
+  {
+    "external_id": "hcs-1",
+    "type": "highlight-summary",
+    "section": "listening",
+    "title": "Highlight Correct Summary 1",
+    "instructions": "You will hear a recording. Click on the paragraph that best relates to the recording.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 1
+    },
+    "sort_order": 43,
+    "payload": {
+      "audio_text": "Many small businesses struggle not because of bad products, but because of weak cash-flow planning. Owners often focus on sales while forgetting delayed payments from customers. Simple forecasting tools and clearer invoice terms can prevent sudden shortfalls.",
+      "options": [
+        "Small businesses fail mainly due to unpopular products and weak branding campaigns.",
+        "Cash-flow planning and invoice discipline matter as much as generating sales.",
+        "Forecasting tools are unnecessary if a company has strong customer demand.",
+        "Delayed payments never affect companies with growing revenue."
+      ]
+    }
+  },
+  {
+    "external_id": "lmcsa-1",
+    "type": "l-mc-single",
+    "section": "listening",
+    "title": "Listening MCQ Single 1",
+    "instructions": "Listen to the recording and answer the multiple-choice question by selecting the correct response. Only one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 1
+    },
+    "sort_order": 44,
+    "payload": {
+      "audio_text": "The library will extend weekend hours during exam week, staying open until midnight on Saturdays and Sundays.",
+      "prompt": "What change is announced?",
+      "options": [
+        "The library will close on weekends",
+        "Weekend hours will be extended during exam week",
+        "Only Sundays will have longer hours",
+        "Midnight openings apply all year"
+      ]
+    }
+  },
+  {
+    "external_id": "lmcsa-2",
+    "type": "l-mc-single",
+    "section": "listening",
+    "title": "Listening MCQ Single 2",
+    "instructions": "Select the correct response. Only one response is correct.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 1
+    },
+    "sort_order": 45,
+    "payload": {
+      "audio_text": "Passengers on flight 218 should proceed to gate 14 for boarding, which begins in twenty minutes.",
+      "prompt": "Where should passengers go?",
+      "options": [
+        "Gate 12",
+        "Gate 14",
+        "Baggage claim",
+        "The ticket counter"
+      ]
+    }
+  },
+  {
+    "external_id": "smw-1",
+    "type": "missing-word",
+    "section": "listening",
+    "title": "Select Missing Word 1",
+    "instructions": "You will hear a recording about biodiversity. At the end of the recording the last word or group of words has been replaced by a beep. Select the correct option to complete the recording.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "single",
+      "index": 0
+    },
+    "sort_order": 46,
+    "payload": {
+      "audio_text": "Protecting wetlands is essential because these ecosystems filter water, store carbon, and provide habitats for countless",
+      "options": [
+        "species",
+        "skyscrapers",
+        "schedules",
+        "softwares"
+      ]
+    }
+  },
+  {
+    "external_id": "hiw-1",
+    "type": "highlight-incorrect",
+    "section": "listening",
+    "title": "Highlight Incorrect Words 1",
+    "instructions": "You will hear a recording. Below is a transcript of the recording. Some words in the transcription differ from what the speaker said. Please click on the words that are different.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "hiw",
+      "words": [
+        "library",
+        "railway"
+      ]
+    },
+    "sort_order": 47,
+    "payload": {
+      "audio_text": "The laboratory will analyze soil samples collected near the river this afternoon.",
+      "transcript_with_errors": [
+        {
+          "word": "The"
+        },
+        {
+          "word": "library",
+          "incorrect": true
+        },
+        {
+          "word": "will"
+        },
+        {
+          "word": "analyze"
+        },
+        {
+          "word": "soil"
+        },
+        {
+          "word": "samples"
+        },
+        {
+          "word": "collected"
+        },
+        {
+          "word": "near"
+        },
+        {
+          "word": "the"
+        },
+        {
+          "word": "railway",
+          "incorrect": true
+        },
+        {
+          "word": "this"
+        },
+        {
+          "word": "afternoon."
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "hiw-2",
+    "type": "highlight-incorrect",
+    "section": "listening",
+    "title": "Highlight Incorrect Words 2",
+    "instructions": "Click on the words that are different from what the speaker said.",
+    "correct_text": null,
+    "answer_key": {
+      "kind": "hiw",
+      "words": [
+        "valuable",
+        "ticket"
+      ]
+    },
+    "sort_order": 48,
+    "payload": {
+      "audio_text": "Candidates must bring a valid passport and the confirmation email to the test center.",
+      "transcript_with_errors": [
+        {
+          "word": "Candidates"
+        },
+        {
+          "word": "must"
+        },
+        {
+          "word": "bring"
+        },
+        {
+          "word": "a"
+        },
+        {
+          "word": "valuable",
+          "incorrect": true
+        },
+        {
+          "word": "passport"
+        },
+        {
+          "word": "and"
+        },
+        {
+          "word": "the"
+        },
+        {
+          "word": "confirmation"
+        },
+        {
+          "word": "ticket",
+          "incorrect": true
+        },
+        {
+          "word": "to"
+        },
+        {
+          "word": "the"
+        },
+        {
+          "word": "test"
+        },
+        {
+          "word": "center."
+        }
+      ]
+    }
+  },
+  {
+    "external_id": "wfd-1",
+    "type": "wfd",
+    "section": "listening",
+    "title": "Write From Dictation 1",
+    "instructions": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+    "correct_text": "The workshop on academic writing begins after the lunch break.",
+    "answer_key": {
+      "kind": "text",
+      "value": "the workshop on academic writing begins after the lunch break"
+    },
+    "sort_order": 49,
+    "payload": {
+      "audio_text": "The workshop on academic writing begins after the lunch break."
+    }
+  },
+  {
+    "external_id": "wfd-2",
+    "type": "wfd",
+    "section": "listening",
+    "title": "Write From Dictation 2",
+    "instructions": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+    "correct_text": "Please keep your belongings with you at all times.",
+    "answer_key": {
+      "kind": "text",
+      "value": "please keep your belongings with you at all times"
+    },
+    "sort_order": 50,
+    "payload": {
+      "audio_text": "Please keep your belongings with you at all times."
+    }
+  },
+  {
+    "external_id": "wfd-3",
+    "type": "wfd",
+    "section": "listening",
+    "title": "Write From Dictation 3",
+    "instructions": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+    "correct_text": "Climate policy requires cooperation between local and national governments.",
+    "answer_key": {
+      "kind": "text",
+      "value": "climate policy requires cooperation between local and national governments"
+    },
+    "sort_order": 51,
+    "payload": {
+      "audio_text": "Climate policy requires cooperation between local and national governments."
+    }
+  },
+  {
+    "external_id": "wfd-4",
+    "type": "wfd",
+    "section": "listening",
+    "title": "Write From Dictation 4",
+    "instructions": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+    "correct_text": "Students may access the online portal using their university credentials.",
+    "answer_key": {
+      "kind": "text",
+      "value": "students may access the online portal using their university credentials"
+    },
+    "sort_order": 52,
+    "payload": {
+      "audio_text": "Students may access the online portal using their university credentials."
+    }
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "slug": "read-aloud",
+    "skill": "speaking",
+    "name": "Read Aloud",
+    "done": 12,
+    "total": 1552,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "repeat-sentence",
+    "skill": "speaking",
+    "name": "Repeat Sentence",
+    "done": 8,
+    "total": 2104,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "describe-image",
+    "skill": "speaking",
+    "name": "Describe Image",
+    "done": 3,
+    "total": 890,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "retell-lecture",
+    "skill": "speaking",
+    "name": "Re-tell Lecture",
+    "done": 1,
+    "total": 640,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "answer-short",
+    "skill": "speaking",
+    "name": "Answer Short Question",
+    "done": 5,
+    "total": 1200,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "cue-card",
+    "skill": "speaking",
+    "name": "Cue Card / Part 2",
+    "done": 4,
+    "total": 420,
+    "exam_slugs": [
+      "ielts"
+    ]
+  },
+  {
+    "slug": "interview",
+    "skill": "speaking",
+    "name": "Interview Practice",
+    "done": 2,
+    "total": 180,
+    "exam_slugs": [
+      "ielts",
+      "english-basic"
+    ]
+  },
+  {
+    "slug": "swt",
+    "skill": "writing",
+    "name": "Summarize Written Text",
+    "done": 6,
+    "total": 520,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "essay",
+    "skill": "writing",
+    "name": "Write Essay",
+    "done": 2,
+    "total": 380,
+    "exam_slugs": [
+      "pte",
+      "ielts"
+    ]
+  },
+  {
+    "slug": "task1",
+    "skill": "writing",
+    "name": "Task 1 Report",
+    "done": 1,
+    "total": 260,
+    "exam_slugs": [
+      "ielts"
+    ]
+  },
+  {
+    "slug": "case-write",
+    "skill": "writing",
+    "name": "Case Analysis",
+    "done": 0,
+    "total": 140,
+    "exam_slugs": [
+      "bba",
+      "mba"
+    ]
+  },
+  {
+    "slug": "rw-fib",
+    "skill": "reading",
+    "name": "R&W Fill in the Blanks",
+    "done": 18,
+    "total": 980,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "r-fib",
+    "skill": "reading",
+    "name": "R Fill in the Blanks",
+    "done": 9,
+    "total": 760,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "reorder",
+    "skill": "reading",
+    "name": "Re-order Paragraphs",
+    "done": 4,
+    "total": 540,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "rc-mcq",
+    "skill": "reading",
+    "name": "Reading Comprehension",
+    "done": 11,
+    "total": 890,
+    "exam_slugs": [
+      "ielts",
+      "bba",
+      "mba",
+      "english-basic"
+    ]
+  },
+  {
+    "slug": "sst",
+    "skill": "listening",
+    "name": "Summarize Spoken Text",
+    "done": 3,
+    "total": 410,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "wfd",
+    "skill": "listening",
+    "name": "Write From Dictation",
+    "done": 15,
+    "total": 1200,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "l-mcq",
+    "skill": "listening",
+    "name": "Listening MCQ",
+    "done": 7,
+    "total": 680,
+    "exam_slugs": [
+      "pte",
+      "ielts"
+    ]
+  },
+  {
+    "slug": "hiw",
+    "skill": "listening",
+    "name": "Highlight Incorrect Words",
+    "done": 2,
+    "total": 390,
+    "exam_slugs": [
+      "pte"
+    ]
+  },
+  {
+    "slug": "full-mock",
+    "skill": "mock",
+    "name": "Full Mock Test",
+    "done": 0,
+    "total": 24,
+    "exam_slugs": [
+      "pte",
+      "ielts",
+      "bba",
+      "mba"
+    ]
+  },
+  {
+    "slug": "sectional-mock",
+    "skill": "mock",
+    "name": "Sectional Mock",
+    "done": 1,
+    "total": 48,
+    "exam_slugs": [
+      "pte",
+      "ielts",
+      "bba",
+      "mba"
+    ]
+  }
+]

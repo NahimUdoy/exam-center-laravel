@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "pte",
+    "name": "PTE Academic",
+    "short_name": "PTE",
+    "tagline": "AI-scored speaking & writing drills",
+    "accent": "#0d9488",
+    "accent_soft": "#ccfbf1",
+    "description": "Pearson Test of English with prediction banks and mock suites.",
+    "question_count": 21400,
+    "free_practice": true
+  },
+  {
+    "slug": "ielts",
+    "name": "IELTS",
+    "short_name": "IELTS",
+    "tagline": "Band-focused practice for Academic & General",
+    "accent": "#2563eb",
+    "accent_soft": "#dbeafe",
+    "description": "Listening, Reading, Writing, Speaking with examiner-style feedback.",
+    "question_count": 8600,
+    "free_practice": true
+  },
+  {
+    "slug": "bba",
+    "name": "BBA Entrance",
+    "short_name": "BBA",
+    "tagline": "Quant, verbal & logical readiness",
+    "accent": "#ea580c",
+    "accent_soft": "#ffedd5",
+    "description": "Business school entrance modules with timed sectional mocks.",
+    "question_count": 4200,
+    "free_practice": true
+  },
+  {
+    "slug": "mba",
+    "name": "MBA / GMAT Track",
+    "short_name": "MBA",
+    "tagline": "Case, quant & critical reasoning",
+    "accent": "#7c3aed",
+    "accent_soft": "#ede9fe",
+    "description": "MBA prep pathways with adaptive difficulty and score targets.",
+    "question_count": 5100,
+    "free_practice": true
+  },
+  {
+    "slug": "english-basic",
+    "name": "English Basics",
+    "short_name": "Basics",
+    "tagline": "Grammar, vocab & fluency foundation",
+    "accent": "#059669",
+    "accent_soft": "#d1fae5",
+    "description": "Everyday English drills for beginners stepping into exam prep.",
+    "question_count": 2800,
+    "free_practice": true
+  }
+]

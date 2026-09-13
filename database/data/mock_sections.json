@@ -1,0 +1,7 @@
+[
+  { "slug": "speaking", "label": "Speaking", "color": "#ea580c", "soft": "#ffedd5", "band": "from-orange-500 to-amber-500" },
+  { "slug": "reading", "label": "Reading", "color": "#2563eb", "soft": "#dbeafe", "band": "from-blue-600 to-sky-500" },
+  { "slug": "listening", "label": "Listening", "color": "#7c3aed", "soft": "#ede9fe", "band": "from-violet-600 to-fuchsia-500" },
+  { "slug": "writing", "label": "Writing", "color": "#0d9488", "soft": "#ccfbf1", "band": "from-teal-600 to-emerald-500" },
+  { "slug": "full", "label": "Full Mock", "color": "#0f172a", "soft": "#e2e8f0", "band": "from-slate-800 to-slate-600" }
+]
