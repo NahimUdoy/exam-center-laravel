@@ -9,6 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MockTestController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SpeakingController;
 use App\Livewire\Admin\CollectionEditor;
 use App\Livewire\Admin\CollectionIndex;
 use App\Livewire\Admin\MediaLibrary;
@@ -39,6 +40,13 @@ Route::get('/practice/{skill}/{task}/{question}', [PracticeController::class, 'q
 Route::post('/practice/{skill}/{task}/{question}', [PracticeController::class, 'submit'])
     ->middleware('student')
     ->name('practice.submit');
+
+Route::get('/speaking/one-to-one', [SpeakingController::class, 'show'])
+    ->middleware('student')
+    ->name('speaking.show');
+Route::post('/speaking/one-to-one', [SpeakingController::class, 'store'])
+    ->middleware('student')
+    ->name('speaking.store');
 
 Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates.index');
 Route::get('/certificates/{certificate:slug}', [CertificateController::class, 'show'])->name('certificates.show');

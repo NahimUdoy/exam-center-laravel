@@ -11,8 +11,10 @@ use App\Models\TaskType;
 use App\Support\PracticeKind;
 use App\Support\PracticePayload;
 use App\Support\PteBank;
+use App\Support\SpeakingBank;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class PracticeContentSeeder extends Seeder
 {
@@ -24,6 +26,7 @@ class PracticeContentSeeder extends Seeder
             $this->seedPracticeQuestions();
             $this->backfillPracticePayloads();
             $this->seedTypedShowcase();
+            $this->seedSpeakingPack();
             $this->seedExtraMocks();
             $this->seedMockBanks();
             $this->seedExtraPte();
@@ -296,6 +299,56 @@ class PracticeContentSeeder extends Seeder
                 'passage' => 'Give a clear preference, one reason, and one short example.',
             ],
         ];
+    }
+
+    private function seedSpeakingPack(): void
+    {
+        $interviewType = TaskType::query()->where('slug', 'interview')->first();
+        $cueType = TaskType::query()->where('slug', 'cue-card')->first();
+
+        foreach (SpeakingBank::interviews() as $i => $prompt) {
+            $id = 'nvs-speak-int-'.str_pad((string) ($i + 1), 3, '0', STR_PAD_LEFT);
+            PracticeQuestion::query()->updateOrCreate(
+                ['external_id' => $id],
+                [
+                    'task_type_id' => $interviewType?->id,
+                    'skill' => 'speaking',
+                    'task_slug' => 'interview',
+                    'title' => Str::limit($prompt, 72, ''),
+                    'difficulty' => ['Easy', 'Medium', 'Difficult'][$i % 3],
+                    'appeared' => 8 + ($i % 40),
+                    'is_prediction' => $i % 7 === 0,
+                    'prompt' => $prompt,
+                    'passage' => 'Give a clear answer, one reason, and one short example.',
+                    'exam_slugs' => ['ielts', 'pte', 'english-basic', 'mba', 'bba'],
+                    'meta' => ['speaking_pack' => true],
+                ]
+            );
+        }
+
+        foreach (SpeakingBank::cueCards() as $i => $card) {
+            $id = 'nvs-speak-cue-'.str_pad((string) ($i + 1), 3, '0', STR_PAD_LEFT);
+            PracticeQuestion::query()->updateOrCreate(
+                ['external_id' => $id],
+                [
+                    'task_type_id' => $cueType?->id,
+                    'skill' => 'speaking',
+                    'task_slug' => 'cue-card',
+                    'title' => $card['topic'],
+                    'difficulty' => ['Easy', 'Medium', 'Difficult'][$i % 3],
+                    'appeared' => 12 + ($i % 30),
+                    'is_prediction' => $i % 5 === 0,
+                    'prompt' => $card['text'],
+                    'passage' => implode(' · ', $card['bullets']),
+                    'exam_slugs' => ['ielts', 'pte', 'english-basic', 'mba', 'bba'],
+                    'meta' => [
+                        'speaking_pack' => true,
+                        'bullets' => $card['bullets'],
+                        'tags' => $card['tags'],
+                    ],
+                ]
+            );
+        }
     }
 
     private function seedExtraMocks(): void

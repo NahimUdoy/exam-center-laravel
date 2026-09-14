@@ -68,16 +68,19 @@
         <nav class="hidden items-center gap-0.5 lg:flex">
             @php
                 $basicsUrl = route('english-basics.index', ['exam' => 'english-basic']);
+                $speakUrl = route('speaking.show', ['exam' => $current->slug]);
                 $links = $marketing
-                    ? [['/', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates'], ['/#courses', 'All Courses']]
-                    : [['/dashboard', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates']];
+                    ? [['/', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates'], ['/#courses', 'All Courses']]
+                    : [['/dashboard', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates']];
             @endphp
             @foreach($links as [$href, $label])
                 @php
                     $path = ltrim(parse_url($href, PHP_URL_PATH) ?: $href, '/');
                     $active = $label === 'Basics'
                         ? request()->is('english-basics', 'english-basics/*')
-                        : (request()->is($path) || ($href === '/' && request()->is('/')));
+                        : ($label === 'Speak'
+                            ? request()->is('speaking', 'speaking/*')
+                            : (request()->is($path) || ($href === '/' && request()->is('/'))));
                     if ($label === 'Home' && request()->is('english-basics*')) {
                         $active = false;
                     }

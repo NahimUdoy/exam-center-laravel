@@ -53,13 +53,13 @@
                 $shortcuts = $exam->slug === 'english-basic'
                     ? [
                         ['Grammar A–Z', 'Noun, verb, tense, article — explain + practice', '#2d6a4f', '#d8efe4', $basicsHref, 'BookOpen', true],
-                        ['Score Feedback', 'See how your last answers landed', '#c45c26', '#f6e4d6', null, 'MessageSquareQuote', false],
+                        ['One-to-one speaking', 'Free examiner interview — talk and get a follow-up', '#c45c26', '#f6e4d6', route('speaking.show', ['exam' => $exam->slug]), 'Mic', false],
                         ['Mock Tests', 'Timed papers, real exam flow', '#4f7c8a', '#dce8eb', route('mock-tests.index', ['exam' => $exam->slug]), 'Timer', false],
                         ['Certificates', 'Pathway and module credentials', '#c4a35a', '#f4ecd4', route('certificates.index', ['exam' => $exam->slug]), 'Award', false],
                     ]
                     : [
-                        ['Score Feedback', 'See how your last answers landed', '#c45c26', '#f6e4d6', null, 'MessageSquareQuote', false],
-                        ['Predictions', 'Likely questions for your exam', '#b4534a', '#f6e0dc', $practiceHref, 'Sparkles', true],
+                        ['One-to-one speaking', 'Free examiner interview — Parts 1 to 3', '#c45c26', '#f6e4d6', route('speaking.show', ['exam' => $exam->slug]), 'Mic', true],
+                        ['Predictions', 'Likely questions for your exam', '#b4534a', '#f6e0dc', $practiceHref, 'Sparkles', false],
                         ['Mock Tests', 'Timed papers, real exam flow', '#4f7c8a', '#dce8eb', route('mock-tests.index', ['exam' => $exam->slug]), 'Timer', false],
                         ['Certificates', 'Pathway and module credentials', '#c4a35a', '#f4ecd4', route('certificates.index', ['exam' => $exam->slug]), 'Award', false],
                     ];
