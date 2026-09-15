@@ -2,6 +2,8 @@
 
 namespace App\Support\Cms;
 
+use App\Models\TaskType;
+
 class QuestionEntry
 {
     public const MCQ_SINGLE = ['rc-mcq', 'l-mcq', 'mc-single', 'l-mc-single', 'highlight-summary', 'missing-word'];
@@ -41,7 +43,28 @@ class QuestionEntry
         $current = (string) ($form[$when['key'] ?? ''] ?? '');
         $equals = (array) ($when['equals'] ?? []);
 
-        return in_array($current, $equals, true);
+        if (in_array($current, $equals, true)) {
+            return true;
+        }
+
+        $skill = self::skillFor($current);
+
+        return match (true) {
+            $skill === 'reading' && $equals === self::MCQ_SINGLE => true,
+            $skill === 'writing' && $equals === self::WRITING => true,
+            $skill === 'speaking' && $equals === self::SPEAKING => true,
+            $skill === 'listening' && in_array($equals, [self::AUDIO, self::MCQ_SINGLE], true) => true,
+            default => false,
+        };
+    }
+
+    private static function skillFor(string $taskSlug): ?string
+    {
+        if ($taskSlug === '') {
+            return null;
+        }
+
+        return TaskType::query()->where('slug', $taskSlug)->value('skill');
     }
 
     public static function expand(array $form, string $slug): array

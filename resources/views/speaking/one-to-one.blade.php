@@ -20,6 +20,14 @@
                         <li class="flex gap-3"><span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-soft text-xs font-extrabold text-brand">3</span><span><strong class="text-ink">Part 3</strong> — three discussion questions. Then a practice score and transcript.</span></li>
                     </ol>
                     <p class="mt-6 rounded-2xl bg-mist px-4 py-3 text-xs font-medium leading-5 text-muted">Best in Chrome or Edge with a headset. If speech recognition is blocked, type your answer and press Send. Login is required so we can save the session.</p>
+                    <div class="mt-5">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-muted">Steal these openers</p>
+                        <ul class="mt-2 space-y-1.5 text-sm text-ink">
+                            @foreach(($phrases ?? []) as $phrase)
+                                <li>“{{ $phrase }}”</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     <div class="mt-6 flex flex-wrap gap-3">
                         <button type="button" @click="start()" class="inline-flex items-center gap-2 rounded-2xl bg-brand px-5 py-3 text-sm font-bold text-white shadow-lg shadow-brand/20">
                             <x-nvs.icon name="Mic" class="h-4 w-4" />
@@ -85,6 +93,7 @@
                         </button>
                         <button type="button" @click="finishTurn()" class="rounded-2xl bg-ink px-4 py-2.5 text-sm font-bold text-white" :disabled="mode === 'speak'">Done</button>
                         <button type="button" @click="skip()" class="rounded-2xl px-4 py-2.5 text-sm font-bold text-muted hover:text-ink">Skip</button>
+                        <button type="button" @click="if (confirm('Start this interview over?')) restart()" class="rounded-2xl px-4 py-2.5 text-sm font-bold text-muted hover:text-ink">Restart</button>
                     </div>
 
                     <label class="mt-4 block text-xs font-extrabold uppercase tracking-wide text-muted">Type if the mic fails
@@ -386,10 +395,18 @@ function nvsSpeaking(script) {
             }
         },
         restart() {
+            this.clearTimer();
+            this.stopListen();
+            if (window.speechSynthesis) window.speechSynthesis.cancel();
+            if (this.clock) { clearInterval(this.clock); this.clock = null; }
             this.screen = 'lobby';
             this.turns = [];
             this.current = null;
             this.score = null;
+            this.typed = '';
+            this.interim = '';
+            this.mode = 'idle';
+            this.elapsed = 0;
         },
         scrollLog() {
             this.$nextTick(() => {

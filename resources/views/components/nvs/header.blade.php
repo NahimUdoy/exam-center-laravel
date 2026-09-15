@@ -69,9 +69,10 @@
             @php
                 $basicsUrl = route('english-basics.index', ['exam' => 'english-basic']);
                 $speakUrl = route('speaking.show', ['exam' => $current->slug]);
+                $studyUrl = route('study.show', ['exam' => $current->slug]);
                 $links = $marketing
-                    ? [['/', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates'], ['/#courses', 'All Courses']]
-                    : [['/dashboard', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates']];
+                    ? [['/', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$studyUrl, 'Study'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates'], ['/#courses', 'All Courses']]
+                    : [['/dashboard', 'Home'], ['/academy', 'Academy'], [$basicsUrl, 'Basics'], ['/dashboard', 'Practice'], [$studyUrl, 'Study'], [$speakUrl, 'Speak'], ['/mock-tests', 'Mock Tests'], ['/certificates', 'Certificates']];
             @endphp
             @foreach($links as [$href, $label])
                 @php
@@ -80,7 +81,9 @@
                         ? request()->is('english-basics', 'english-basics/*')
                         : ($label === 'Speak'
                             ? request()->is('speaking', 'speaking/*')
-                            : (request()->is($path) || ($href === '/' && request()->is('/'))));
+                            : ($label === 'Study'
+                                ? request()->is('study', 'study/*')
+                                : (request()->is($path) || ($href === '/' && request()->is('/')))));
                     if ($label === 'Home' && request()->is('english-basics*')) {
                         $active = false;
                     }

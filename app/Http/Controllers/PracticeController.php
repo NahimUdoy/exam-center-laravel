@@ -44,7 +44,7 @@ class PracticeController extends Controller
 
         $index = $questions->search(fn ($q) => $q->external_id === $item->external_id);
         $index = $index === false ? 0 : $index;
-        $kind = PracticeKind::for($taskType->slug);
+        $kind = PracticeKind::for($taskType->slug, $taskType->skill);
         $payload = PracticePayload::hydrate($item);
 
         return view('practice.question', compact('exam', 'taskType', 'item', 'skill', 'questions', 'index', 'kind', 'payload'))->with('variant', 'app');

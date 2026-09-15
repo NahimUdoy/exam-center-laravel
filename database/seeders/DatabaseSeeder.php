@@ -31,7 +31,16 @@ class DatabaseSeeder extends Seeder
         if (app()->environment('production')
             && Exam::query()->exists()
             && PracticeQuestion::query()->count() > 100) {
-            $this->command?->info('Catalog already loaded — skipping seed.');
+            $this->command?->info('Catalog already loaded — adding study packs only.');
+            User::query()->updateOrCreate(
+                ['email' => 'student@nextverseskill.test'],
+                [
+                    'name' => 'NV Student',
+                    'password' => Hash::make('password'),
+                    'email_verified_at' => now(),
+                ]
+            );
+            $this->call(PracticeContentSeeder::class);
 
             return;
         }

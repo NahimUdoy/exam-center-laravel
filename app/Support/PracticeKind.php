@@ -4,7 +4,7 @@ namespace App\Support;
 
 class PracticeKind
 {
-    public static function mode(string $slug): string
+    public static function mode(string $slug, ?string $skill = null): string
     {
         return match ($slug) {
             'read-aloud' => 'speak-read',
@@ -19,13 +19,19 @@ class PracticeKind
             'sst', 'wfd' => 'listen-write',
             'l-mcq' => 'listen-mcq',
             'hiw' => 'hiw',
-            default => 'speak-read',
+            default => match ($skill) {
+                'writing' => 'write',
+                'reading' => 'mcq',
+                'listening' => 'listen-mcq',
+                'speaking' => 'speak-prompt',
+                default => 'speak-read',
+            },
         };
     }
 
-    public static function for(string $slug): array
+    public static function for(string $slug, ?string $skill = null): array
     {
-        $mode = self::mode($slug);
+        $mode = self::mode($slug, $skill);
         [$prep, $record] = match ($slug) {
             'repeat-sentence' => [3, 15],
             'describe-image' => [25, 40],
@@ -39,7 +45,7 @@ class PracticeKind
         return [
             'slug' => $slug,
             'mode' => $mode,
-            'instructions' => self::instructions($slug),
+            'instructions' => self::instructions($slug, $skill),
             'prep' => $prep,
             'record' => $record,
             'uses_mic' => str_starts_with($mode, 'speak-'),
@@ -51,7 +57,7 @@ class PracticeKind
         ];
     }
 
-    public static function instructions(string $slug): string
+    public static function instructions(string $slug, ?string $skill = null): string
     {
         return match ($slug) {
             'read-aloud' => 'Look at the text below. In 35 seconds, read it aloud as naturally as possible.',
@@ -73,7 +79,13 @@ class PracticeKind
             'wfd' => 'Listen to the sentence. Type it exactly as you hear it.',
             'l-mcq' => 'Listen to the audio, then choose the best answer.',
             'hiw' => 'Listen and click the words in the transcript that do not match the audio.',
-            default => 'Read the prompt and complete the task.',
+            default => match ($skill) {
+                'writing' => 'Write a complete response. Stay on topic and use a clear structure.',
+                'reading' => 'Read the passage and choose the best answer.',
+                'listening' => 'Listen, then choose the best answer.',
+                'speaking' => 'Answer clearly. Give a reason and one example.',
+                default => 'Read the prompt and complete the task.',
+            },
         };
     }
 

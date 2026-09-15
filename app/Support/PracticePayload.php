@@ -34,7 +34,7 @@ class PracticePayload
             }
         }
 
-        $built['interaction'] = PracticeKind::mode($item->task_slug ?: 'read-aloud');
+        $built['interaction'] = PracticeKind::mode($item->task_slug ?: 'read-aloud', $item->skill);
         $built['prompt'] = $item->prompt ?: ($built['prompt'] ?? '');
         $built['passage'] = $item->passage ?: ($built['passage'] ?? PracticeBank::PASSAGE);
         $built['image_url'] = $item->image_url ?: ($built['image_url'] ?? null);
@@ -45,8 +45,8 @@ class PracticePayload
     public static function build(PracticeQuestion $item): array
     {
         $slug = $item->task_slug ?: 'read-aloud';
-        $mode = PracticeKind::mode($slug);
-        $kind = PracticeKind::for($slug);
+        $mode = PracticeKind::mode($slug, $item->skill);
+        $kind = PracticeKind::for($slug, $item->skill);
         $seed = abs(crc32((string) $item->external_id.'|'.$slug));
         $passage = trim((string) ($item->passage ?: PracticeBank::PASSAGE));
         $title = $item->title ?: 'Practice item';

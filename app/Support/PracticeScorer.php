@@ -8,7 +8,7 @@ class PracticeScorer
 {
     public static function for(PracticeQuestion $item, int $seconds, string $skill, mixed $answer = null): array
     {
-        $kind = PracticeKind::for($item->task_slug ?: 'read-aloud');
+        $kind = PracticeKind::for($item->task_slug ?: 'read-aloud', $item->skill);
         $payload = PracticePayload::hydrate($item);
         $key = $payload['answer_key'] ?? null;
         $seconds = max(0, min(180, $seconds));

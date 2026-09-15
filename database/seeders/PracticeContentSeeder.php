@@ -8,6 +8,7 @@ use App\Models\MockTest;
 use App\Models\PracticeQuestion;
 use App\Models\PteQuestion;
 use App\Models\TaskType;
+use App\Support\AptitudeBank;
 use App\Support\PracticeKind;
 use App\Support\PracticePayload;
 use App\Support\PteBank;
@@ -28,6 +29,7 @@ class PracticeContentSeeder extends Seeder
             $this->seedTypedShowcase();
             $this->seedSpeakingPack();
             $this->seedExtraMocks();
+            $this->seedAptitudePack();
             $this->seedMockBanks();
             $this->seedExtraPte();
             $this->refreshCounts();
@@ -120,7 +122,7 @@ class PracticeContentSeeder extends Seeder
             );
             $built = PracticePayload::build($item);
             $meta = array_merge($built, $row['meta'] ?? []);
-            $meta['interaction'] = PracticeKind::mode($task->slug);
+            $meta['interaction'] = PracticeKind::mode($task->slug, $task->skill);
             $item->meta = $meta;
             $item->save();
         }
@@ -298,6 +300,101 @@ class PracticeContentSeeder extends Seeder
                 'prompt' => 'Do you prefer studying alone or with other people? Why?',
                 'passage' => 'Give a clear preference, one reason, and one short example.',
             ],
+            [
+                'external_id' => 'nvs-essay-02',
+                'task_slug' => 'essay',
+                'title' => 'Should universities teach job skills or ideas?',
+                'difficulty' => 'Medium',
+                'prompt' => 'Some people think universities should prepare students only for jobs. Others think universities should teach thinking and culture. Discuss both views and give your opinion. Write 250–300 words.',
+                'passage' => 'Employers want graduates who can use software on day one. Teachers argue that a degree should also train people to judge evidence and write clearly. Many programmes now mix a professional module with a seminar that has no single right answer.',
+                'meta' => [
+                    'word_limit' => ['min' => 250, 'max' => 300],
+                    'sample_answer' => 'Universities should keep teaching judgement and writing, and add a short workplace module, because a job skill without the ability to question a claim goes stale quickly.',
+                ],
+            ],
+            [
+                'external_id' => 'nvs-essay-03',
+                'task_slug' => 'essay',
+                'title' => 'Online classes versus campus classes',
+                'difficulty' => 'Easy',
+                'prompt' => 'Do the advantages of studying online outweigh the disadvantages? Write 200–300 words.',
+                'passage' => 'Online courses cut travel time and let shy students replay a lecture. Critics say group work and speaking practice are weaker on a screen, and that some homes are too noisy for timed tests.',
+                'meta' => ['word_limit' => ['min' => 200, 'max' => 300]],
+            ],
+            [
+                'external_id' => 'nvs-task1-02',
+                'task_slug' => 'task1',
+                'title' => 'Library visits 2015–2025',
+                'prompt' => 'The table shows library visits per year. Summarise the main features and make comparisons.',
+                'passage' => 'City Central: 2015 = 1.2m visits, 2025 = 0.9m. Campus library: 2015 = 0.4m, 2025 = 0.7m. Tool-lending desk opened at Campus in 2020. City Central cut Sunday hours in 2022.',
+                'meta' => ['word_limit' => ['min' => 150, 'max' => 180]],
+            ],
+            [
+                'external_id' => 'nvs-case-02',
+                'task_slug' => 'case-write',
+                'title' => 'Cafeteria queues at noon',
+                'prompt' => 'Peak queue time is 18 minutes. Recommend one change and name one risk.',
+                'passage' => 'A campus cafeteria serves 900 lunches. Between 12:10 and 12:40 the line hits 18 minutes. A second till costs two extra staff. Pre-order via an app is cheaper but 40% of students say they decide food only when they see the counter.',
+                'meta' => ['word_limit' => ['min' => 120, 'max' => 250]],
+            ],
+            [
+                'external_id' => 'nvs-case-03',
+                'task_slug' => 'case-write',
+                'title' => 'Internship attendance drop',
+                'prompt' => 'Week-5 attendance at a unpaid internship fell from 92% to 61%. What should the programme director do?',
+                'passage' => 'Students said travel cost 90 minutes each way. A stipend of 300 per month is possible if the cohort shrinks from 40 to 28. Managers want full attendance because clients notice empty desks.',
+                'meta' => ['word_limit' => ['min' => 120, 'max' => 250]],
+            ],
+            [
+                'external_id' => 'nvs-wfd-02',
+                'task_slug' => 'wfd',
+                'title' => 'Dictation: revision beats cramming',
+                'passage' => 'Short daily revision beats a long cramming session the night before the test.',
+                'meta' => [
+                    'audio_text' => 'Short daily revision beats a long cramming session the night before the test.',
+                    'correct_text' => 'short daily revision beats a long cramming session the night before the test',
+                    'answer_key' => ['kind' => 'text', 'value' => 'short daily revision beats a long cramming session the night before the test'],
+                ],
+            ],
+            [
+                'external_id' => 'nvs-wfd-03',
+                'task_slug' => 'wfd',
+                'title' => 'Dictation: please repeat the figure',
+                'passage' => 'Please repeat the figure and check the decimal point.',
+                'meta' => [
+                    'audio_text' => 'Please repeat the figure and check the decimal point.',
+                    'correct_text' => 'please repeat the figure and check the decimal point',
+                    'answer_key' => ['kind' => 'text', 'value' => 'please repeat the figure and check the decimal point'],
+                ],
+            ],
+            [
+                'external_id' => 'nvs-rc-02',
+                'task_slug' => 'rc-mcq',
+                'title' => 'Night work and sleep pressure',
+                'passage' => 'People who work overnight fight a built-in sleep pressure that rises the longer they stay awake. Bright light and caffeine can delay sleep, but they do not remove the need for it. Hospitals that add 20-minute naps on long shifts report fewer attention slips, though some staff worry that a nap looks unprofessional.',
+                'prompt' => 'What is the main point?',
+                'meta' => [
+                    'options' => [
+                        'Sleep pressure still builds during night work, even if light and caffeine delay sleep.',
+                        'Caffeine removes the need for sleep on night shifts.',
+                        'Naps are unprofessional in every hospital.',
+                        'Only doctors experience sleep pressure.',
+                    ],
+                    'answer_key' => ['kind' => 'single', 'index' => 0],
+                    'correct_text' => 'Sleep pressure still builds during night work, even if light and caffeine delay sleep.',
+                ],
+            ],
+            [
+                'external_id' => 'nvs-asq-02',
+                'task_slug' => 'answer-short',
+                'title' => 'What is a library for?',
+                'passage' => $library,
+                'meta' => [
+                    'audio_text' => 'According to the passage, what are libraries besides buildings that store books?',
+                    'correct_text' => 'quiet laboratories',
+                    'answer_key' => ['kind' => 'text', 'value' => 'quiet laboratories'],
+                ],
+            ],
         ];
     }
 
@@ -348,6 +445,54 @@ class PracticeContentSeeder extends Seeder
                     ],
                 ]
             );
+        }
+    }
+
+    private function seedAptitudePack(): void
+    {
+        foreach (['bba', 'mba'] as $exam) {
+            $bank = AptitudeBank::questions($exam);
+            $mocks = MockTest::query()
+                ->where('exam_slug', $exam)
+                ->where('runner', '!=', 'pte')
+                ->orderBy('id')
+                ->get();
+
+            foreach ($mocks as $i => $mock) {
+                MockQuestion::query()
+                    ->where('mock_test_id', $mock->id)
+                    ->where('prompt', 'like', '%Aptitude Q%')
+                    ->delete();
+
+                $dedicated = str_contains($mock->slug, 'quant')
+                    || str_contains($mock->slug, 'verbal')
+                    || str_contains($mock->slug, 'cr-pack')
+                    || str_contains($mock->slug, 'full');
+
+                if ($dedicated) {
+                    MockQuestion::query()->where('mock_test_id', $mock->id)->delete();
+                } elseif ($mock->examQuestions()->exists()) {
+                    continue;
+                }
+
+                $chunk = array_slice($bank, ($i * 18) % max(1, count($bank)), 18);
+                if (count($chunk) < 18) {
+                    $chunk = array_merge($chunk, array_slice($bank, 0, 18 - count($chunk)));
+                }
+
+                foreach ($chunk as $n => $item) {
+                    MockQuestion::query()->create([
+                        'mock_test_id' => $mock->id,
+                        'number' => $n + 1,
+                        'part' => 1,
+                        'prompt' => $item['prompt'],
+                        'options' => $item['options'],
+                        'correct_index' => $item['correct'],
+                        'skill_tag' => $item['tag'],
+                        'tip' => $item['tip'],
+                    ]);
+                }
+            }
         }
     }
 
@@ -528,8 +673,10 @@ class PracticeContentSeeder extends Seeder
             ['slug' => 'ielts-full-02', 'exam_slug' => 'ielts', 'section' => 'full', 'title' => 'IELTS Full Mock — Session 02', 'subtitle' => 'Timed mixed-skill paper', 'duration_min' => 165, 'questions' => 20, 'attempts' => 0, 'difficulty' => 'Standard', 'featured' => false, 'runner' => 'generic'],
             ['slug' => 'bba-full-03', 'exam_slug' => 'bba', 'section' => 'full', 'title' => 'BBA Entrance Full Mock 03', 'subtitle' => 'Quant · Verbal · Logic extra paper', 'duration_min' => 90, 'questions' => 20, 'attempts' => 0, 'difficulty' => 'Advanced', 'featured' => false, 'runner' => 'generic'],
             ['slug' => 'bba-q-quant', 'exam_slug' => 'bba', 'section' => 'reading', 'title' => 'BBA Quant Drill', 'subtitle' => 'Arithmetic and data interpretation', 'duration_min' => 25, 'questions' => 20, 'attempts' => 0, 'difficulty' => 'Standard', 'featured' => false, 'runner' => 'generic'],
+            ['slug' => 'bba-v-verbal', 'exam_slug' => 'bba', 'section' => 'reading', 'title' => 'BBA Verbal & Grammar Drill', 'subtitle' => 'RC · usage · odd-one-out', 'duration_min' => 25, 'questions' => 18, 'attempts' => 0, 'difficulty' => 'Standard', 'featured' => true, 'runner' => 'generic'],
             ['slug' => 'mba-full-02', 'exam_slug' => 'mba', 'section' => 'full', 'title' => 'MBA Entrance Full Mock 02', 'subtitle' => 'CR · RC · Quant extra paper', 'duration_min' => 120, 'questions' => 20, 'attempts' => 0, 'difficulty' => 'Advanced', 'featured' => true, 'runner' => 'generic'],
             ['slug' => 'mba-r-rc-pack', 'exam_slug' => 'mba', 'section' => 'reading', 'title' => 'MBA RC Extra Pack', 'subtitle' => 'Short passages with inference items', 'duration_min' => 30, 'questions' => 13, 'attempts' => 0, 'difficulty' => 'Standard', 'featured' => false, 'runner' => 'generic'],
+            ['slug' => 'mba-cr-pack', 'exam_slug' => 'mba', 'section' => 'reading', 'title' => 'MBA Critical Reasoning Pack', 'subtitle' => 'Assumption, weaken, strengthen', 'duration_min' => 25, 'questions' => 18, 'attempts' => 0, 'difficulty' => 'Advanced', 'featured' => true, 'runner' => 'generic'],
             ['slug' => 'eng-full-02', 'exam_slug' => 'english-basic', 'section' => 'full', 'title' => 'Placement Full Check 02', 'subtitle' => 'Second mixed-skills placement', 'duration_min' => 45, 'questions' => 20, 'attempts' => 0, 'difficulty' => 'Foundation', 'featured' => false, 'runner' => 'generic'],
             ['slug' => 'eng-r-b1', 'exam_slug' => 'english-basic', 'section' => 'reading', 'title' => 'Everyday Reading B1', 'subtitle' => 'Notices, emails, and short articles', 'duration_min' => 20, 'questions' => 13, 'attempts' => 0, 'difficulty' => 'Foundation', 'featured' => false, 'runner' => 'generic'],
         ];
@@ -810,6 +957,9 @@ class PracticeContentSeeder extends Seeder
             'Harbor speed limits protect seagrass beds that stabilize mud, store carbon, and shelter young fish before they move to deeper water.',
             'Tool-lending libraries let residents borrow drills and sewing machines, cutting waste while teaching practical repair skills.',
             'Forecasting invoices is as important as winning new clients, because unpaid bills can stop a healthy product from covering wages.',
+            'Short daily speaking practice raises fluency more than a long weekend session that you cannot repeat.',
+            'When the microphone opens, start with the overview, then one comparison, then a closing trend.',
+            'Students who check the last word of a sentence make fewer Write From Dictation errors.',
         ];
         foreach ($ra as $i => $text) {
             $items[] = $this->pte([

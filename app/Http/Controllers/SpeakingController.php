@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\SpeakingSession;
 use App\Support\ExamContext;
 use App\Support\SpeakingScript;
+use App\Support\StudyDesk;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -15,8 +16,9 @@ class SpeakingController extends Controller
     {
         $exam = ExamContext::current($request->query('exam'));
         $script = SpeakingScript::forExam($exam);
+        $phrases = StudyDesk::phrases($exam->slug);
 
-        return view('speaking.one-to-one', compact('exam', 'script'))->with('variant', 'app');
+        return view('speaking.one-to-one', compact('exam', 'script', 'phrases'))->with('variant', 'app');
     }
 
     public function store(Request $request): JsonResponse
