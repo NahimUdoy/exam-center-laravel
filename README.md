@@ -1,6 +1,6 @@
 # NextVerseSkill Exam Center
 
-A free practice academy for **IELTS, PTE, MBA, BBA, and English Basics**. Students can browse every exam and task type without an account. Login is required to open questions, submit answers, and save scores.
+A free practice academy for **IELTS, PTE, MBA, BBA, and English Basics**. Students can browse every exam and task type without an account. Login is required to open questions, submit answers, save scores, and run a speaking interview.
 
 **Live site:** [http://exam-center-w40t.onrender.com/](http://exam-center-w40t.onrender.com/)
 
@@ -13,11 +13,13 @@ This README is a visual map of the product. Skim the screenshots to see every ma
 | [Home](#1-home--marketing) | Landing page, course cards, level-check start |
 | [Academy](#2-academy--personal-plan) | Level check and personal study plan |
 | [Practice](#3-practice-dashboard--two-themes) | Studio / Classic themes, skill decks, locked questions |
-| [Mocks](#4-mock-tests) | IELTS reading paper and PTE full mock |
-| [English Basics](#5-english-basics) | Grammar path and topic drills |
-| [Certificates](#6-certificates) | Pathway, module, and mock credentials |
-| [Account](#7-login--profile) | Login modal and student profile |
-| [Admin CMS](#8-admin-cms) | Edit exams, questions, mocks, site copy, and media |
+| [Study desk](#4-study-desk) | Scoring, 14-day plan, templates, phrases, traps |
+| [Speaking](#5-one-to-one-speaking) | Free in-browser examiner interview (Parts 1–3) |
+| [Mocks](#6-mock-tests) | IELTS reading paper, PTE full mock, BBA/MBA aptitude |
+| [English Basics](#7-english-basics) | Grammar path and topic drills |
+| [Certificates](#8-certificates) | Pathway, module, and mock credentials |
+| [Account](#9-login--profile) | Login modal and student profile |
+| [Admin CMS](#10-admin-cms) | Add exams, question types, questions, mocks, and media |
 
 ---
 
@@ -65,9 +67,31 @@ After login, the actual question opens: prompt, timer or mic, submit, and score 
 
 ---
 
-## 4. Mock tests
+## 4. Study desk
 
-The mock library lists full and section mocks per exam.
+Each exam has a **Study** page (no login). Switch IELTS, PTE, BBA, or MBA in the header.
+
+Students get today’s timed drill, how scoring works, a 14-day plan, stealable templates and phrases, common traps, collocations, and (for BBA/MBA) a one-page formula sheet.
+
+Open `/study?exam=ielts` (or `pte`, `bba`, `mba`).
+
+![Study desk](docs/screenshots/25-study-desk.jpg)
+
+---
+
+## 5. One-to-one speaking
+
+A free in-browser examiner: warm-up questions, one cue card, then discussion. No paid API. Chrome or Edge with a headset works best; typing is the fallback.
+
+Login is required. Each **Start interview** shuffles a new set from 250+ Part 1 questions and 80+ cue cards. **Skip** jumps one question; **Restart** (or **New session** after the recap) starts over.
+
+![One-to-one speaking](docs/screenshots/26-speaking.jpg)
+
+---
+
+## 6. Mock tests
+
+The mock library lists full and section mocks per exam. BBA and MBA papers use real quant, verbal, logic, and critical-reasoning items.
 
 ![Mock test list](docs/screenshots/08-mock-tests.jpg)
 
@@ -81,7 +105,7 @@ PTE mocks start with a device check, then a timed speaking / writing / reading /
 
 ---
 
-## 5. English Basics
+## 7. English Basics
 
 A beginner path: short explanation, example sentences, then eight questions per topic.
 
@@ -91,7 +115,7 @@ A beginner path: short explanation, example sentences, then eight questions per 
 
 ---
 
-## 6. Certificates
+## 8. Certificates
 
 Pathway, module, and mock credentials for each exam. Earned, pending, and locked states are all visible.
 
@@ -101,9 +125,9 @@ Pathway, module, and mock credentials for each exam. Earned, pending, and locked
 
 ---
 
-## 7. Login & profile
+## 9. Login & profile
 
-Guests can browse types. Opening a question or submitting an answer opens this modal.
+Guests can browse types. Opening a question, starting a speaking interview, or submitting an answer opens this modal.
 
 ![Login modal](docs/screenshots/07-login-modal.jpg)
 
@@ -115,9 +139,11 @@ Demo student (local / seed): `student@nextverseskill.test` / `password`
 
 ---
 
-## 8. Admin CMS
+## 10. Admin CMS
 
-Everything the public site shows is edited here: exams, homepage courses, skills, practice tasks, questions, mocks, certificates, PTE bank, diagnostics, reading papers, site copy, and media.
+Add new exams (TOEFL, GRE, or your own), homepage course cards, question types, practice questions, and mocks from here. Do it in order: **exam → task type → questions**.
+
+The overview screen has an **Add prep content** strip with those steps. Pick a skill on a new task (speaking, writing, reading, listening) so the player knows how students should answer.
 
 ![Admin login](docs/screenshots/18-admin-login.jpg)
 
@@ -133,7 +159,7 @@ Everything the public site shows is edited here: exams, homepage courses, skills
 
 ![Mock tests](docs/screenshots/24-admin-mocks.jpg)
 
-Admin URL: `/admin/login`. Password comes from `ADMIN_PASSWORD` in `.env` (see `.env.example`).
+Admin URL: `/admin/login`. Password comes from `ADMIN_PASSWORD` in `.env` (see `.env.example`). Default in seed/docs: `nextverse`.
 
 ---
 
@@ -141,12 +167,13 @@ Admin URL: `/admin/login`. Password comes from `ADMIN_PASSWORD` in `.env` (see `
 
 | Action | Guest | Logged in |
 | --- | --- | --- |
-| Home, Academy, dashboard, mock list, certificates | Yes | Yes |
+| Home, Academy, dashboard, Study desk, mock list, certificates | Yes | Yes |
 | Browse question **types** (Read Aloud, Essay, …) | Yes | Yes |
 | See question titles and open a question | No — login modal | Yes |
+| One-to-one speaking interview | No — login | Yes |
 | Submit an answer / save a score | No | Yes |
 | Finish Academy plan | No | Yes |
-| Admin CMS | No | Admin password |
+| Add exams, tasks, questions in Admin | No | Admin password |
 
 ---
 
@@ -164,6 +191,15 @@ php artisan serve
 Then open `http://127.0.0.1:8000`.
 
 Switch themes with the header control, or add `?theme=studio` / `?theme=classic` to any URL.
+
+Useful paths:
+
+| Path | What |
+| --- | --- |
+| `/study?exam=ielts` | Study desk |
+| `/speaking/one-to-one?exam=ielts` | One-to-one speaking |
+| `/dashboard?exam=pte` | Practice hub |
+| `/admin/login` | CMS |
 
 ## Refresh these screenshots
 

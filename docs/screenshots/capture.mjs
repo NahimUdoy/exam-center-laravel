@@ -80,6 +80,9 @@ async function main() {
     await go(page, '/english-basics/parts-of-speech?exam=english-basic&theme=studio');
     await shot(page, '12-english-topic', { fullPage: true });
 
+    await go(page, '/study?exam=ielts&theme=studio');
+    await shot(page, '25-study-desk', { fullPage: true, maxHeight: 2200 });
+
     await go(page, '/certificates?exam=pte&theme=studio');
     await shot(page, '13-certificates', { fullPage: true });
 
@@ -94,6 +97,9 @@ async function main() {
 
     await go(page, '/practice/speaking/read-aloud/1001648?exam=pte&theme=studio');
     await shot(page, '15-practice-question', { fullPage: true });
+
+    await go(page, '/speaking/one-to-one?exam=ielts&theme=studio');
+    await shot(page, '26-speaking', { fullPage: true });
 
     await go(page, '/profile');
     await shot(page, '16-profile', { fullPage: true });
