@@ -6,6 +6,21 @@ A free practice academy for **IELTS, PTE, MBA, BBA, and English Basics**. Studen
 
 This README is a visual map of the product. Skim the screenshots to see every major screen.
 
+## Showcase film
+
+A ~100 second cinematic tour: Ken Burns motion across real product screens, chapter cards, and an original score (no licensed music).
+
+[![NextVerseSkill showcase](docs/showcase/stills/nvs-open-travel.jpg)](docs/showcase/nextverseskill-showcase.mp4)
+
+**Play:** [docs/showcase/nextverseskill-showcase.mp4](docs/showcase/nextverseskill-showcase.mp4) (1920×1080, ~40 MB)
+
+Rebuild from stills and screenshots:
+
+```bash
+python3 docs/showcase/compose_score.py
+python3 docs/showcase/build_film.py
+```
+
 ## Visual tour
 
 | Area | What it does |
